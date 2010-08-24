@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	256AC3D80F4B6AC300CF3369 /* TWAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{463, 0}";
+			sepNavVisRange = "{0, 1520}";
+			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
+		};
+	};
+	256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {901, 3570}}";
+			sepNavSelRange = "{1083, 0}";
+			sepNavVisRange = "{0, 1536}";
+			sepNavWindowFrame = "{{15, 265}, {896, 763}}";
+		};
+	};
+	2724602012231F6700F16C01 /* TWAppDelegate.m:84 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 84;
+		location = TerminalLauncher;
+		modificationTime = 304356934.4836761;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	2724602D12231FC600F16C01 /* TWAppDelegate.m:214 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		functionName = "-openNewTerminalinSeparateWindow:withInitialDirectory:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 214;
+		location = TerminalLauncher;
+		modificationTime = 304356934.483854;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272461901223FF3C00F16C01 /* TWAppDelegate.m:210 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		functionName = "-openNewTerminalinSeparateWindow:withInitialDirectory:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 210;
+		location = TerminalLauncher;
+		modificationTime = 304356934.484018;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	2724627E1224112B00F16C01 /* TWAppDelegate.m:75 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 75;
+		location = TerminalLauncher;
+		modificationTime = 304356934.48422;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A53AD1222FB4400341171 /* TWTerminalAppCWDDriver.m:219 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getForegroundProcessPIDFromTTY:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 219;
+		location = TerminalLauncher;
+		modificationTime = 304356934.482582;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A53EE1222FF1300341171 /* TWTerminalAppCWDDriver.m:238 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getForegroundProcessPIDFromTTY:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 238;
+		location = TerminalLauncher;
+		modificationTime = 304356934.482784;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A54241223024A00341171 /* TWTerminalAppCWDDriver.m:245 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getForegroundProcessPIDFromTTY:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 245;
+		location = TerminalLauncher;
+		modificationTime = 304356934.482949;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A54331223036A00341171 /* TWTerminalAppCWDDriver.m:224 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getForegroundProcessPIDFromTTY:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 224;
+		location = TerminalLauncher;
+		modificationTime = 304356934.4831319;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A54421223043F00341171 /* TWTerminalAppCWDDriver.m:116 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getProcessCWDWithPID:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 116;
+		location = TerminalLauncher;
+		modificationTime = 304356934.483304;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A54651223062200341171 /* TWTerminalAppCWDDriver.m:123 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "+getProcessCWDWithPID:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 123;
+		location = TerminalLauncher;
+		modificationTime = 304356934.483468;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	272A5539122316B000341171 /* SystemEvents.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {17960, 23324}}";
+			sepNavSelRange = "{5661, 27}";
+			sepNavVisRange = "{0, 3827}";
+			sepNavWindowFrame = "{{762, 254}, {896, 763}}";
+		};
+	};
+	2737810A12030A6B00F8F8A5 /* TermWeaver */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TermWeaver;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	2737811812030A8B00F8F8A5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	2737811912030A8B00F8F8A5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	273781801203181800F8F8A5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273781811203181800F8F8A5 /* AXUIElement.h */;
+		name = "AXUIElement.h: 25";
+		rLen = 0;
+		rLoc = 628;
+		rType = 0;
+		vrLen = 1833;
+		vrLoc = 0;
+	};
+	273781811203181800F8F8A5 /* AXUIElement.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AXUIElement.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/Headers/AXUIElement.h;
+		sourceTree = "<absolute>";
+	};
+	273781CF12032B3B00F8F8A5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273781D012032B3B00F8F8A5 /* NSAccessibility.h */;
+		name = "NSAccessibility.h: 132";
+		rLen = 32;
+		rLoc = 6481;
+		rType = 0;
+		vrLen = 2959;
+		vrLoc = 0;
+	};
+	273781D012032B3B00F8F8A5 /* NSAccessibility.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSAccessibility.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSAccessibility.h;
+		sourceTree = "<absolute>";
+	};
+	273781D212032B3B00F8F8A5 /* CFBase.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CFBase.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework/Versions/A/Headers/CFBase.h;
+		sourceTree = "<absolute>";
+	};
+	273781D312032B3B00F8F8A5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273781D412032B3B00F8F8A5 /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 167";
+		rLen = 24;
+		rLoc = 5921;
+		rType = 0;
+		vrLen = 1489;
+		vrLoc = 5200;
+	};
+	273781D412032B3B00F8F8A5 /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSObjCRuntime.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+	};
+	276132201221510400367AAB /* TWCWDDriver.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{1083, 0}";
+			sepNavVisRange = "{0, 1229}";
+			sepNavWindowFrame = "{{38, 239}, {896, 763}}";
+		};
+	};
+	276132211221519900367AAB /* TWFinderAppCWDDriver.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1203}";
+		};
+	};
+	276132221221519900367AAB /* TWFinderAppCWDDriver.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 1330}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1539}";
+		};
+	};
+	2761322D122153EB00367AAB /* TWTerminalAppCWDDriver.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1347}";
+		};
+	};
+	2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 3780}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1464}";
+		};
+	};
+	276132301221543000367AAB /* TWDefaultCWDDriver.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1200}";
+		};
+	};
+	276132311221543000367AAB /* TWDefaultCWDDriver.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {880, 1428}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1725}";
+			sepNavWindowFrame = "{{61, 218}, {896, 763}}";
+		};
+	};
+	2761329612215F4100367AAB /* TWDefines.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 1134}}";
+			sepNavSelRange = "{0, 1082}";
+			sepNavVisRange = "{0, 1503}";
+			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
+		};
+	};
+	276132AC1221626F00367AAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 273781D212032B3B00F8F8A5 /* CFBase.h */;
+		name = "CFBase.h: 413";
+		rLen = 36;
+		rLoc = 14356;
+		rType = 0;
+		vrLen = 1815;
+		vrLoc = 1987;
+	};
+	2761334312216AEF00367AAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761334412216AEF00367AAB /* AXAttributeConstants.h */;
+		name = "AXAttributeConstants.h: 924";
+		rLen = 52;
+		rLoc = 27763;
+		rType = 0;
+		vrLen = 1923;
+		vrLoc = 26971;
+	};
+	2761334412216AEF00367AAB /* AXAttributeConstants.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AXAttributeConstants.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/Headers/AXAttributeConstants.h;
+		sourceTree = "<absolute>";
+	};
+	276133E7122177B400367AAB /* Finder.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {4359, 12992}}";
+			sepNavSelRange = "{18502, 12}";
+			sepNavVisRange = "{0, 1610}";
+			sepNavWindowFrame = "{{84, 197}, {896, 763}}";
+		};
+	};
+	276134631221801B00367AAB /* TWFinderAppCWDDriver.m:43 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */;
+		functionName = "-getCWDFromApplication:error:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 43;
+		location = TerminalLauncher;
+		modificationTime = 304356934.481683;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	278FC52512241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	278FC52612241E4900F1F0AD /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* TermWeaver-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/krikava/Documents/Projects/Personal/TermWeaver/TermWeaver-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	278FC52712241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761329612215F4100367AAB /* TWDefines.h */;
+		name = "TWDefines.h: 1";
+		rLen = 1082;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1503;
+		vrLoc = 0;
+	};
+	278FC52812241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132201221510400367AAB /* TWCWDDriver.h */;
+		name = "TWCWDDriver.h: 22";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 0;
+	};
+	278FC52912241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		name = "TWAppDelegate.m: 22";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 1536;
+		vrLoc = 0;
+	};
+	278FC52A12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132301221543000367AAB /* TWDefaultCWDDriver.h */;
+		name = "TWDefaultCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 0;
+	};
+	278FC52B12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		name = "TWTerminalAppCWDDriver.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1464;
+		vrLoc = 0;
+	};
+	278FC52C12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761322D122153EB00367AAB /* TWTerminalAppCWDDriver.h */;
+		name = "TWTerminalAppCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1347;
+		vrLoc = 0;
+	};
+	278FC52D12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */;
+		name = "TWFinderAppCWDDriver.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1539;
+		vrLoc = 0;
+	};
+	278FC52E12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132211221519900367AAB /* TWFinderAppCWDDriver.h */;
+		name = "TWFinderAppCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1203;
+		vrLoc = 0;
+	};
+	278FC52F12241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276133E7122177B400367AAB /* Finder.h */;
+		name = "Finder.h: 456";
+		rLen = 12;
+		rLoc = 18502;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 0;
+	};
+	278FC53012241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 272A5539122316B000341171 /* SystemEvents.h */;
+		name = "SystemEvents.h: 86";
+		rLen = 27;
+		rLoc = 5661;
+		rType = 0;
+		vrLen = 3827;
+		vrLoc = 0;
+	};
+	278FC53112241E4900F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E34B2212218A5400E66481 /* Terminal.h */;
+		name = "Terminal.h: 16";
+		rLen = 0;
+		rLoc = 440;
+		rType = 0;
+		vrLen = 1407;
+		vrLoc = 0;
+	};
+	278FC54112241EFD00F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* TWAppDelegate.h */;
+		name = "TWAppDelegate.h: 9";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 1520;
+		vrLoc = 0;
+	};
+	278FC54212241EFD00F1F0AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* TWAppDelegate.h */;
+		name = "TWAppDelegate.h: 9";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 1520;
+		vrLoc = 0;
+	};
+	27E34B001221881E00E66481 /* TWAppDelegate.m:47 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 47;
+		location = TerminalLauncher;
+		modificationTime = 304356934.482196;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	27E34B2212218A5400E66481 /* Terminal.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 2534}}";
+			sepNavSelRange = "{440, 0}";
+			sepNavVisRange = "{0, 1407}";
+			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
+		};
+	};
+	27E34B4512218E5F00E66481 /* TWTerminalAppCWDDriver.m:102 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		functionName = "-getCWDFromApplication:error:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 102;
+		location = TerminalLauncher;
+		modificationTime = 304356934.4823729;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2737810A12030A6B00F8F8A5 /* TermWeaver */;
+		activeTarget = 8D1107260486CEB800E47090 /* TermWeaver */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* TermWeaver */,
+		);
+		breakpoints = (
+			276134631221801B00367AAB /* TWFinderAppCWDDriver.m:43 */,
+			27E34B001221881E00E66481 /* TWAppDelegate.m:47 */,
+			27E34B4512218E5F00E66481 /* TWTerminalAppCWDDriver.m:102 */,
+			272A53AD1222FB4400341171 /* TWTerminalAppCWDDriver.m:219 */,
+			272A53EE1222FF1300341171 /* TWTerminalAppCWDDriver.m:238 */,
+			272A54241223024A00341171 /* TWTerminalAppCWDDriver.m:245 */,
+			272A54331223036A00341171 /* TWTerminalAppCWDDriver.m:224 */,
+			272A54421223043F00341171 /* TWTerminalAppCWDDriver.m:116 */,
+			272A54651223062200341171 /* TWTerminalAppCWDDriver.m:123 */,
+			2724602012231F6700F16C01 /* TWAppDelegate.m:84 */,
+			2724602D12231FC600F16C01 /* TWAppDelegate.m:214 */,
+			272461901223FF3C00F16C01 /* TWAppDelegate.m:210 */,
+			2724627E1224112B00F16C01 /* TWAppDelegate.m:75 */,
+		);
+		codeSenseManager = 2737811912030A8B00F8F8A5 /* Code sense */;
+		executables = (
+			2737810A12030A6B00F8F8A5 /* TermWeaver */,
+		);
+		expressions = (
+			"[a count]",
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA23EDF0692099D00951B8B" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					278,
+					20,
+					177,
+					177,
+					107,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					629,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					589,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 304357165;
+			PBXWorkspaceStateSaveDate = 304357165;
+		};
+		perUserProjectItems = {
+			273781801203181800F8F8A5 = 273781801203181800F8F8A5 /* PBXTextBookmark */;
+			273781CF12032B3B00F8F8A5 = 273781CF12032B3B00F8F8A5 /* PBXTextBookmark */;
+			273781D312032B3B00F8F8A5 = 273781D312032B3B00F8F8A5 /* PBXTextBookmark */;
+			276132AC1221626F00367AAB = 276132AC1221626F00367AAB /* PBXTextBookmark */;
+			2761334312216AEF00367AAB = 2761334312216AEF00367AAB /* PBXTextBookmark */;
+			278FC52512241E4900F1F0AD = 278FC52512241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52612241E4900F1F0AD = 278FC52612241E4900F1F0AD /* PlistBookmark */;
+			278FC52712241E4900F1F0AD = 278FC52712241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52812241E4900F1F0AD = 278FC52812241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52912241E4900F1F0AD = 278FC52912241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52A12241E4900F1F0AD = 278FC52A12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52B12241E4900F1F0AD = 278FC52B12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52C12241E4900F1F0AD = 278FC52C12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52D12241E4900F1F0AD = 278FC52D12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52E12241E4900F1F0AD = 278FC52E12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC52F12241E4900F1F0AD = 278FC52F12241E4900F1F0AD /* PBXTextBookmark */;
+			278FC53012241E4900F1F0AD = 278FC53012241E4900F1F0AD /* PBXTextBookmark */;
+			278FC53112241E4900F1F0AD = 278FC53112241E4900F1F0AD /* PBXTextBookmark */;
+			278FC54112241EFD00F1F0AD = 278FC54112241EFD00F1F0AD /* PBXTextBookmark */;
+			278FC54212241EFD00F1F0AD = 278FC54212241EFD00F1F0AD /* PBXTextBookmark */;
+		};
+		sourceControlManager = 2737811812030A8B00F8F8A5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* TermWeaver */ = {
+		activeExec = 0;
+		executables = (
+			2737810A12030A6B00F8F8A5 /* TermWeaver */,
+		);
+	};
+	8D1107310486CEB800E47090 /* TermWeaver-Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1619, 490}}";
+			sepNavSelRange = "{914, 0}";
+			sepNavVisRange = "{480, 540}";
+		};
+	};
+}
