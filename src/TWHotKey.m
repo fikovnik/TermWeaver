@@ -20,20 +20,35 @@
  THE SOFTWARE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import <Carbon/Carbon.h>
+#import "TWHotKey.h"
 
-#import "TWCWDDriver.h":
 
-@interface TWAppDelegate : NSObject <NSApplicationDelegate> {
-	NSDictionary *mDrivers;
-	NSObject<TWCWDDriver> *mDefaultDriver;
-	AXUIElementRef mSystemWideElement;
+@implementation TWHotKey
+
+@synthesize mId;
+@synthesize mKeyCode;
+@synthesize mModifiers;
+@synthesize mHandler;
+@synthesize mProvider;
+@synthesize mUserData;
+
+- (id) initWithKeyCode:(NSInteger)keyCode modifiers:(NSInteger)modifiers handler:(SEL)handler provider:(id)provider userData:(id)userData {
+	
+	if (![super init]) {
+		return nil;
+	}
+	
+	// TODO: assert
+	
+	mKeyCode = keyCode;
+	mModifiers = modifiers;
+	mHandler = handler;
+	mProvider = provider;
+	mUserData = userData;
+	
+	return self;
+
 }
 
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow;
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path;
-
-+ (void) logAXError:(AXError)error withMessage:(NSString *)message;
 
 @end

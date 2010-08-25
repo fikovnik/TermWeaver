@@ -23,17 +23,15 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 
-#import "TWCWDDriver.h":
+#import "TWHotKey.h"
 
-@interface TWAppDelegate : NSObject <NSApplicationDelegate> {
-	NSDictionary *mDrivers;
-	NSObject<TWCWDDriver> *mDefaultDriver;
-	AXUIElementRef mSystemWideElement;
+@interface TWHotKeyManager : NSObject {
+
 }
 
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow;
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path;
++ (void) initialize;
 
-+ (void) logAXError:(AXError)error withMessage:(NSString *)message;
++ (EventHotKeyRef) registerHotKey:(TWHotKey *)hotKey;
+	
 
 @end

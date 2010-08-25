@@ -25,6 +25,7 @@
 #import "TWFinderAppCWDDriver.h"
 #import "TWTerminalAppCWDDriver.h"
 #import "TWDefaultCWDDriver.h"
+#import "TWHotKeyManager.h"
 
 #import "Terminal.h"
 #import "SystemEvents.h"
@@ -35,7 +36,17 @@
 static NSString *const TERMINAL_APP_ID = @"com.apple.Terminal"; 
 static NSString *const SYSTEMEVENTS_APP_ID = @"com.apple.systemevents";
 
+@interface TWAppDelegate (Private)
+
+- (void) openNewTerminalInNewWindow_:(NSNumber *)newWindow;
+
+@end
+
+
 @implementation TWAppDelegate
+
+OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
+					   void *userData);
 
 
 // Introduction to Scripting Bridge Programming Guide for Cocoa
@@ -66,24 +77,15 @@ static NSString *const SYSTEMEVENTS_APP_ID = @"com.apple.systemevents";
 	mDefaultDriver = [[TWDefaultCWDDriver alloc] init];
 	
 	// register the key shortcut
-	// TODO: register real shortcut
-	[NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask 
-			   handler:^(NSEvent *event) {
-				   //[NSApp activateIgnoringOtherApps:YES];
-				   NSLog(@"%@", event);
-				   
-				   if ([event keyCode] == 42
-					   && [event modifierFlags] & NSAlternateKeyMask
-					   && [event modifierFlags] & NSControlKeyMask)  {
-					   // TODO: measure how many operation do we do per time to prevent some major scew ups
-					   // TODO: allow maximum call each 2 seconds
-					   // TODO: use lock to make sure that only one operation runs at a time
-					   // NSLock, NSOperationQueue (size=1), NSOperation
-					   BOOL newWindow = !([event modifierFlags] & NSShiftKeyMask);
-					   [self openNewTerminalInNewWindow:newWindow];
-				   }
-			   }
-	];	
+	
+	// TODO: store references
+	// TODO: check for errors
+	TWHotKey *openWindowHotKey = [[TWHotKey alloc] initWithKeyCode:42 modifiers:optionKey+controlKey handler:@selector(openNewTerminalInNewWindow_:) provider:self userData:[NSNumber numberWithBool:YES]];
+	[TWHotKeyManager registerHotKey:openWindowHotKey];
+	TWHotKey *openTabHotKey = [[TWHotKey alloc] initWithKeyCode:42 modifiers:shiftKey+optionKey+controlKey handler:@selector(openNewTerminalInNewWindow_:) provider:self userData:[NSNumber numberWithBool:NO]];
+	[TWHotKeyManager registerHotKey:openTabHotKey];
+	
+	// TODO: gracefull shtudown - UnregisterEventHotKey
 }
 
 - (void) dealloc {
@@ -91,6 +93,10 @@ static NSString *const SYSTEMEVENTS_APP_ID = @"com.apple.systemevents";
 	[mDefaultDriver release];
 	
 	[super dealloc];
+}
+
+- (void) openNewTerminalInNewWindow_:(NSNumber *)newWindow {
+	[self openNewTerminalInNewWindow:[newWindow boolValue]];
 }
 
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow {

@@ -23,17 +23,23 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 
-#import "TWCWDDriver.h":
-
-@interface TWAppDelegate : NSObject <NSApplicationDelegate> {
-	NSDictionary *mDrivers;
-	NSObject<TWCWDDriver> *mDefaultDriver;
-	AXUIElementRef mSystemWideElement;
+@interface TWHotKey : NSObject {
+	@private
+	NSInteger mId;
+	NSInteger mKeyCode;
+	NSInteger mModifiers;
+	SEL mHandler;
+	id mProvider;
+	id mUserData;
 }
 
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow;
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path;
+@property (assign, getter=id, setter=setId) NSInteger mId;
+@property (assign, readonly, getter=keyCode) NSInteger mKeyCode;
+@property (assign, readonly, getter=modifiers) NSInteger mModifiers;
+@property (assign, readonly, getter=handler) SEL mHandler;
+@property (retain, readonly, getter=provider) id mProvider;
+@property (retain, readonly, getter=userData) id mUserData;
 
-+ (void) logAXError:(AXError)error withMessage:(NSString *)message;
+- (id) initWithKeyCode:(NSInteger)keyCode modifiers:(NSInteger)modifiers handler:(SEL)handler provider:(id)provider userData:(id)userData;
 
 @end

@@ -14,6 +14,9 @@
 		276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */; };
 		2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761343B12217D9E00367AAB /* ScriptingBridge.framework */; };
 		278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 278FC55912241F4200F1F0AD /* RegexKitLite.m */; };
+		27F1513812248209000E6B4E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1513712248209000E6B4E /* Carbon.framework */; };
+		27F151AE12248968000E6B4E /* TWHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151AD12248968000E6B4E /* TWHotKeyManager.m */; };
+		27F151BB12248DD8000E6B4E /* TWHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151BA12248DD8000E6B4E /* TWHotKey.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -41,6 +44,11 @@
 		278FC55812241F4200F1F0AD /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = external/RegexKitLite/RegexKitLite.h; sourceTree = "<group>"; };
 		278FC55912241F4200F1F0AD /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = external/RegexKitLite/RegexKitLite.m; sourceTree = "<group>"; };
 		27E34B2212218A5400E66481 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
+		27F1513712248209000E6B4E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		27F151AC12248968000E6B4E /* TWHotKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHotKeyManager.h; sourceTree = "<group>"; };
+		27F151AD12248968000E6B4E /* TWHotKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWHotKeyManager.m; sourceTree = "<group>"; };
+		27F151B912248DD8000E6B4E /* TWHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHotKey.h; sourceTree = "<group>"; };
+		27F151BA12248DD8000E6B4E /* TWHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWHotKey.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -55,6 +63,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */,
+				27F1513812248209000E6B4E /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,10 @@
 				256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */,
 				276132201221510400367AAB /* TWCWDDriver.h */,
 				2761329612215F4100367AAB /* TWDefines.h */,
+				27F151AC12248968000E6B4E /* TWHotKeyManager.h */,
+				27F151AD12248968000E6B4E /* TWHotKeyManager.m */,
+				27F151B912248DD8000E6B4E /* TWHotKey.h */,
+				27F151BA12248DD8000E6B4E /* TWHotKey.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -79,6 +92,7 @@
 			children = (
 				2761343B12217D9E00367AAB /* ScriptingBridge.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				27F1513712248209000E6B4E /* Carbon.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -243,6 +257,8 @@
 				2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */,
 				276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */,
 				278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */,
+				27F151AE12248968000E6B4E /* TWHotKeyManager.m in Sources */,
+				27F151BB12248DD8000E6B4E /* TWHotKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
