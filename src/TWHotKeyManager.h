@@ -32,6 +32,7 @@
 + (void) initialize;
 
 + (EventHotKeyRef) registerHotKey:(TWHotKey *)hotKey;
++ (void) unregisterHotKey:(EventHotKeyRef)hotKey;
 	
 
 @end

@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* TWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */; };
+		256AC3DA0F4B6AC300CF3369 /* TWAgentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */; };
+		27049E2F1225540B00BE2140 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049E2E1225540B00BE2140 /* PreferencePanes.framework */; };
+		27049E3A1225556C00BE2140 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049E391225556C00BE2140 /* Cocoa.framework */; };
+		27049E3D1225557500BE2140 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1513712248209000E6B4E /* Carbon.framework */; };
+		27049E4C1225573400BE2140 /* TWPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */; };
+		27049E501225576B00BE2140 /* TermWeaverPreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */; };
+		27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */; };
+		27049F8D1225657700BE2140 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
+		27049F9D1225669800BE2140 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
+		27049FD812256F1B00BE2140 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWPreferencesController.m */; };
+		2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* TermWeaverAgent.app */; };
+		2704A0C812259A0D00BE2140 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWPreferencesController.m */; };
+		274C0CBF1225C780000AF2F1 /* TermWaverDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */; };
+		274C0CC01225C780000AF2F1 /* TermWaverDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */; };
 		276132231221519900367AAB /* TWFinderAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */; };
 		2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */; };
 		276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */; };
 		2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761343B12217D9E00367AAB /* ScriptingBridge.framework */; };
 		278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 278FC55912241F4200F1F0AD /* RegexKitLite.m */; };
+		27DB4E101226E8BA009FF1C7 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
+		27DB4E2B1226E919009FF1C7 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27F1513812248209000E6B4E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1513712248209000E6B4E /* Carbon.framework */; };
 		27F151AE12248968000E6B4E /* TWHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151AD12248968000E6B4E /* TWHotKeyManager.m */; };
 		27F151BB12248DD8000E6B4E /* TWHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151BA12248DD8000E6B4E /* TWHotKey.m */; };
@@ -22,15 +37,61 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		27049E2C1225540000BE2140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = TermWeaverHelperApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27049FA11225669E00BE2140 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27049F9D1225669800BE2140 /* ShortcutRecorder.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DB4E3D1226E921009FF1C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27DB4E2B1226E919009FF1C7 /* ShortcutRecorder.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3D80F4B6AC300CF3369 /* TWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAppDelegate.m; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* TWAgentAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAgentAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAgentAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* TermWeaver_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermWeaver_Prefix.pch; sourceTree = "<group>"; };
+		27049E27122553FA00BE2140 /* TermWeaver.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermWeaver.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		27049E2E1225540B00BE2140 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		27049E391225556C00BE2140 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27049E4A1225573400BE2140 /* TWPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPreferencePane.h; sourceTree = "<group>"; };
+		27049E4B1225573400BE2140 /* TWPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPreferencePane.m; sourceTree = "<group>"; };
+		27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TermWeaverPreferencePane-Info.plist"; sourceTree = "<group>"; };
+		27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TermWeaverPreferencePane.tiff; sourceTree = "<group>"; };
+		27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermWeaverPreferencePane.xib; sourceTree = "<group>"; };
+		27049F7B1225633700BE2140 /* TeamWeaverPreferencePane_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamWeaverPreferencePane_Prefix.pch; sourceTree = "<group>"; };
+		27049F8C1225657700BE2140 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShortcutRecorder.framework; path = "/Users/krikava/Development/objc/shortcutrecorder-read-only/build/Release/ShortcutRecorder.framework"; sourceTree = "<absolute>"; };
+		27049FD612256F1B00BE2140 /* TWPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPreferencesController.h; sourceTree = "<group>"; };
+		27049FD712256F1B00BE2140 /* TWPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPreferencesController.m; sourceTree = "<group>"; };
 		272A5539122316B000341171 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TermWaverDefaults.plist; sourceTree = "<group>"; };
 		276132201221510400367AAB /* TWCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCWDDriver.h; sourceTree = "<group>"; };
 		276132211221519900367AAB /* TWFinderAppCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFinderAppCWDDriver.h; sourceTree = "<group>"; };
 		276132221221519900367AAB /* TWFinderAppCWDDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFinderAppCWDDriver.m; sourceTree = "<group>"; };
@@ -53,14 +114,26 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* TermWeaver-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TermWeaver-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* TermWeaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermWeaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* TermWeaverAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermWeaverAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27049E25122553FA00BE2140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27049E2F1225540B00BE2140 /* PreferencePanes.framework in Frameworks */,
+				27049E3A1225556C00BE2140 /* Cocoa.framework in Frameworks */,
+				27049E3D1225557500BE2140 /* Carbon.framework in Frameworks */,
+				27049F8D1225657700BE2140 /* ShortcutRecorder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DB4E101226E8BA009FF1C7 /* ShortcutRecorder.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */,
 				27F1513812248209000E6B4E /* Carbon.framework in Frameworks */,
@@ -73,16 +146,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				27E34BB81222EBB900E66481 /* External */,
-				27E34B2312218A5800E66481 /* Drivers */,
-				256AC3D80F4B6AC300CF3369 /* TWAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* TWAppDelegate.m */,
-				276132201221510400367AAB /* TWCWDDriver.h */,
-				2761329612215F4100367AAB /* TWDefines.h */,
-				27F151AC12248968000E6B4E /* TWHotKeyManager.h */,
-				27F151AD12248968000E6B4E /* TWHotKeyManager.m */,
-				27F151B912248DD8000E6B4E /* TWHotKey.h */,
-				27F151BA12248DD8000E6B4E /* TWHotKey.m */,
+				27049F68122562F800BE2140 /* Other Sources */,
+				27049E4A1225573400BE2140 /* TWPreferencePane.h */,
+				27049E4B1225573400BE2140 /* TWPreferencePane.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -93,6 +159,7 @@
 				2761343B12217D9E00367AAB /* ScriptingBridge.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				27F1513712248209000E6B4E /* Carbon.framework */,
+				27049F8C1225657700BE2140 /* ShortcutRecorder.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -110,9 +177,90 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* TermWeaver.app */,
+				8D1107320486CEB800E47090 /* TermWeaverAgent.app */,
+				27049E27122553FA00BE2140 /* TermWeaver.prefPane */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		27049E331225545B00BE2140 /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				27049E341225546500BE2140 /* Classes */,
+				27049E351225546B00BE2140 /* Resources */,
+			);
+			name = Agent;
+			sourceTree = "<group>";
+		};
+		27049E341225546500BE2140 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27E34BB81222EBB900E66481 /* External */,
+				27E34B2312218A5800E66481 /* Drivers */,
+				256AC3D80F4B6AC300CF3369 /* TWAgentAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */,
+				276132201221510400367AAB /* TWCWDDriver.h */,
+				27F151AC12248968000E6B4E /* TWHotKeyManager.h */,
+				27F151AD12248968000E6B4E /* TWHotKeyManager.m */,
+				27F151B912248DD8000E6B4E /* TWHotKey.h */,
+				27F151BA12248DD8000E6B4E /* TWHotKey.m */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		27049E351225546B00BE2140 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* TermWeaver-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27049E361225549300BE2140 /* PreferencePane */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = PreferencePane;
+			sourceTree = "<group>";
+		};
+		27049F68122562F800BE2140 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				27049F7B1225633700BE2140 /* TeamWeaverPreferencePane_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		27049FB2122567EA00BE2140 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27049FD512256EF800BE2140 /* Classes */,
+				27049FB3122567EF00BE2140 /* Resources */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		27049FB3122567EF00BE2140 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27049FD512256EF800BE2140 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27049FD612256F1B00BE2140 /* TWPreferencesController.h */,
+				27049FD712256F1B00BE2140 /* TWPreferencesController.m */,
+				2761329612215F4100367AAB /* TWDefines.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		272A55381223169D00341171 /* Scripting Bridge */ = {
@@ -159,11 +307,13 @@
 		29B97314FDCFA39411CA2CEA /* TerminalLauncher */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
+				27049FB2122567EA00BE2140 /* Common */,
+				27049E361225549300BE2140 /* PreferencePane */,
+				27049E331225545B00BE2140 /* Agent */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				27049E2E1225540B00BE2140 /* PreferencePanes.framework */,
+				27049E391225556C00BE2140 /* Cocoa.framework */,
 			);
 			name = TerminalLauncher;
 			sourceTree = "<group>";
@@ -180,9 +330,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107310486CEB800E47090 /* TermWeaver-Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */,
+				27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */,
+				27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -199,22 +349,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* TermWeaver */ = {
+		27049E26122553FA00BE2140 /* TermWeaver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TermWeaver" */;
+			buildConfigurationList = 27049E2B122553FB00BE2140 /* Build configuration list for PBXNativeTarget "TermWeaver" */;
+			buildPhases = (
+				27049E23122553FA00BE2140 /* Resources */,
+				27049E24122553FA00BE2140 /* Sources */,
+				27049E25122553FA00BE2140 /* Frameworks */,
+				27049FA11225669E00BE2140 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27049E2D1225540000BE2140 /* PBXTargetDependency */,
+			);
+			name = TermWeaver;
+			productName = TeamWeaver;
+			productReference = 27049E27122553FA00BE2140 /* TermWeaver.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1107260486CEB800E47090 /* TermWeaverAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TermWeaverAgent" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				27DB4E3D1226E921009FF1C7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TermWeaver;
+			name = TermWeaverAgent;
 			productInstallPath = "$(HOME)/Applications";
 			productName = TerminalLauncher;
-			productReference = 8D1107320486CEB800E47090 /* TermWeaver.app */;
+			productReference = 8D1107320486CEB800E47090 /* TermWeaverAgent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,30 +399,53 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* TermWeaver */,
+				27049E26122553FA00BE2140 /* TermWeaver */,
+				8D1107260486CEB800E47090 /* TermWeaverAgent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27049E23122553FA00BE2140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */,
+				27049E501225576B00BE2140 /* TermWeaverPreferencePane.tiff in Resources */,
+				27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */,
+				274C0CBF1225C780000AF2F1 /* TermWaverDefaults.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				274C0CC01225C780000AF2F1 /* TermWaverDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		27049E24122553FA00BE2140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27049E4C1225573400BE2140 /* TWPreferencePane.m in Sources */,
+				27049FD812256F1B00BE2140 /* TWPreferencesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2704A0C812259A0D00BE2140 /* TWPreferencesController.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* TWAppDelegate.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* TWAgentAppDelegate.m in Sources */,
 				276132231221519900367AAB /* TWFinderAppCWDDriver.m in Sources */,
 				2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */,
 				276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */,
@@ -263,6 +456,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27049E2D1225540000BE2140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* TermWeaverAgent */;
+			targetProxy = 27049E2C1225540000BE2140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -284,6 +485,83 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		27049E29122553FA00BE2140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TeamWeaverPreferencePane_Prefix.pch;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				INFOPLIST_FILE = "TermWeaverPreferencePane-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = YES;
+				PRODUCT_NAME = TermWeaver;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		27049E2A122553FA00BE2140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TeamWeaverPreferencePane_Prefix.pch;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				INFOPLIST_FILE = "TermWeaverPreferencePane-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = YES;
+				PRODUCT_NAME = TermWeaver;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +570,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Development/objc/Appscript/src/Appscript/build/Release_10.5_32_64_GC\"",
+					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -301,7 +580,7 @@
 				GCC_PREFIX_HEADER = TermWeaver_Prefix.pch;
 				INFOPLIST_FILE = "TermWeaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TermWeaver;
+				PRODUCT_NAME = TermWeaverAgent;
 			};
 			name = Debug;
 		};
@@ -313,13 +592,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../Development/objc/Appscript/src/Appscript/build/Release_10.5_32_64_GC\"",
+					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TermWeaver_Prefix.pch;
 				INFOPLIST_FILE = "TermWeaver-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TermWeaver;
+				PRODUCT_NAME = TermWeaverAgent;
 			};
 			name = Release;
 		};
@@ -354,7 +634,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TermWeaver" */ = {
+		27049E2B122553FB00BE2140 /* Build configuration list for PBXNativeTarget "TermWeaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27049E29122553FA00BE2140 /* Debug */,
+				27049E2A122553FA00BE2140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TermWeaverAgent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,

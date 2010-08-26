@@ -25,14 +25,23 @@
 
 #import "TWCWDDriver.h":
 
-@interface TWAppDelegate : NSObject <NSApplicationDelegate> {
+@interface TWAgentAppDelegate : NSObject <NSApplicationDelegate> {
 	NSDictionary *mDrivers;
 	NSObject<TWCWDDriver> *mDefaultDriver;
 	AXUIElementRef mSystemWideElement;
+	
+	// TODO: make names to be consistent mHotKeyNewWindow
+	EventHotKeyRef newTabHotKeyRef;
+	EventHotKeyRef newWindowHotKeyRef;
 }
 
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow;
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path;
+
+- (void) preferencesChanged:(NSNotification *) notification;
+- (void) shutdown:(NSNotification *) notification;
+
+- (void) reconfigure;
 
 + (void) logAXError:(AXError)error withMessage:(NSString *)message;
 

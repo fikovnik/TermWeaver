@@ -58,9 +58,17 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	InstallApplicationEventHandler(&hotKeyHandler, 1, &eventType, NULL, NULL);
 }
 
+// TODO: modify to propagate error
++ (void) unregisterHotKey:(EventHotKeyRef)hotKey {
+	// TODO: assert
+	
+	UnregisterEventHotKey(hotKey);
+}
+
 + (EventHotKeyRef) registerHotKey:(TWHotKey *)hotKey {
 	// TODO: assert
 	
+	// TODO: id should be already part of hotKey
 	int id=hotKeyIdSequence++;
 	EventHotKeyID hotKeyID;
 	// TODO: extract
