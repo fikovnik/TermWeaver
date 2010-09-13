@@ -9,23 +9,23 @@
 	};
 	256AC3D80F4B6AC300CF3369 /* TWAgentAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {789, 658}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 658}}";
 			sepNavSelRange = "{1643, 0}";
-			sepNavVisRange = "{349, 1300}";
+			sepNavVisRange = "{39, 1610}";
 			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1180, 4760}}";
-			sepNavSelRange = "{9591, 0}";
-			sepNavVisRange = "{9030, 1256}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 4690}}";
+			sepNavSelRange = "{0, 1082}";
+			sepNavVisRange = "{0, 1636}";
 			sepNavWindowFrame = "{{15, 265}, {896, 763}}";
 		};
 	};
 	256AC3F00F4B6AF500CF3369 /* TermWeaver_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {837, 635}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{0, 162}";
 			sepNavVisRange = "{0, 163}";
 			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
@@ -46,16 +46,16 @@
 	};
 	27049E4A1225573400BE2140 /* TWPreferencePane.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1180, 714}}";
-			sepNavSelRange = "{202, 0}";
-			sepNavVisRange = "{0, 1044}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 910}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1675}";
 		};
 	};
 	27049E4B1225573400BE2140 /* TWPreferencePane.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1180, 4242}}";
-			sepNavSelRange = "{3172, 0}";
-			sepNavVisRange = "{2426, 1443}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 4424}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1662}";
 			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
 		};
 	};
@@ -135,19 +135,19 @@
 	27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
-			sepNavSelRange = "{263, 0}";
-			sepNavVisRange = "{0, 518}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1447}";
 		};
 	};
 	27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1619, 1834}}";
-			sepNavSelRange = "{2879, 0}";
-			sepNavVisRange = "{2650, 496}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 2156}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1644}";
 			sepNavWindowFrame = "{{38, 239}, {896, 763}}";
 		};
 	};
-	2704A06112257C5D00BE2140 /* TWAbstractPreferencesController.m:130 */ = {
+	2704A06112257C5D00BE2140 /* TWAbstractPreferencesController.m:144 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -159,13 +159,13 @@
 		functionName = "-setShouldStartTermWeaverAtLogin:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 130;
+		lineNumber = 144;
 		location = TermWeaver;
 		modificationTime = 306107479.554836;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	2704A06312257C6200BE2140 /* TWAbstractPreferencesController.m:130 */ = {
+	2704A06312257C6200BE2140 /* TWAbstractPreferencesController.m:144 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -177,7 +177,7 @@
 		functionName = "-shouldStartTermWeaverAtLogin";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 130;
+		lineNumber = 144;
 		location = TermWeaver;
 		modificationTime = 306107479.554999;
 		originalNumberOfMultipleMatches = 1;
@@ -195,7 +195,7 @@
 		rLen = 0;
 		rLoc = 9223372036854775808;
 	};
-	2704A0F212259E5F00BE2140 /* TWPreferencePane.m:210 */ = {
+	2704A0F212259E5F00BE2140 /* TWPreferencePane.m:224 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -207,7 +207,7 @@
 		functionName = "-launchTermWeaver";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 210;
+		lineNumber = 224;
 		location = TermWeaver;
 		modificationTime = 306107479.555137;
 		originalNumberOfMultipleMatches = 1;
@@ -665,7 +665,7 @@
 	};
 	276132201221510400367AAB /* TWCWDDriver.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{1083, 0}";
 			sepNavVisRange = "{0, 1229}";
 			sepNavWindowFrame = "{{38, 239}, {896, 763}}";
@@ -673,42 +673,42 @@
 	};
 	276132211221519900367AAB /* TWFinderAppCWDDriver.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{1082, 0}";
 			sepNavVisRange = "{0, 1203}";
 		};
 	};
 	276132221221519900367AAB /* TWFinderAppCWDDriver.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {789, 1204}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 1204}}";
 			sepNavSelRange = "{2022, 0}";
-			sepNavVisRange = "{1079, 944}";
+			sepNavVisRange = "{910, 1221}";
 		};
 	};
 	2761322D122153EB00367AAB /* TWTerminalAppCWDDriver.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{1082, 0}";
 			sepNavVisRange = "{0, 1347}";
 		};
 	};
 	2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1368, 3360}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 3388}}";
 			sepNavSelRange = "{6370, 6}";
-			sepNavVisRange = "{6003, 693}";
+			sepNavVisRange = "{5667, 1569}";
 		};
 	};
 	276132301221543000367AAB /* TWDefaultCWDDriver.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {807, 564}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{1082, 0}";
 			sepNavVisRange = "{0, 1200}";
 		};
 	};
 	276132311221543000367AAB /* TWDefaultCWDDriver.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1330}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 1330}}";
 			sepNavSelRange = "{1148, 29}";
 			sepNavVisRange = "{0, 1757}";
 			sepNavWindowFrame = "{{61, 218}, {896, 763}}";
@@ -716,9 +716,9 @@
 	};
 	2761329612215F4100367AAB /* TWDefines.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 2072}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 2072}}";
 			sepNavSelRange = "{5744, 6}";
-			sepNavVisRange = "{4023, 1829}";
+			sepNavVisRange = "{0, 1537}";
 			sepNavWindowFrame = "{{15, 260}, {896, 763}}";
 		};
 	};
@@ -891,23 +891,23 @@
 	};
 	27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 592}}";
-			sepNavSelRange = "{167, 0}";
-			sepNavVisRange = "{0, 220}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1163}";
 		};
 	};
 	27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 592}}";
-			sepNavSelRange = "{163, 0}";
-			sepNavVisRange = "{0, 1115}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 784}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1696}";
 		};
 	};
 	27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 592}}";
-			sepNavSelRange = "{288, 0}";
-			sepNavVisRange = "{0, 288}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1220}";
 		};
 	};
 	27DB4FCB12270C29009FF1C7 /* PBXTextBookmark */ = {
@@ -915,7 +915,7 @@
 		fRef = 27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */;
 		name = "TWAXUtils.m: 10";
 		rLen = 0;
-		rLoc = 163;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 0;
@@ -942,9 +942,9 @@
 	};
 	27DB4FDF12270F8E009FF1C7 /* TWConstants.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 557}}";
-			sepNavSelRange = "{23, 26}";
-			sepNavVisRange = "{0, 401}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1083, 0}";
+			sepNavVisRange = "{0, 1485}";
 		};
 	};
 	27DB4FEF12271423009FF1C7 /* PBXTextBookmark */ = {
@@ -952,7 +952,7 @@
 		fRef = 27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */;
 		name = "TWAgentConstants.h: 14";
 		rLen = 0;
-		rLoc = 288;
+		rLoc = 1220;
 		rType = 0;
 		vrLen = 288;
 		vrLoc = 0;
@@ -962,7 +962,7 @@
 		fRef = 27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */;
 		name = "TWAXUtils.h: 12";
 		rLen = 0;
-		rLoc = 167;
+		rLoc = 1110;
 		rType = 0;
 		vrLen = 220;
 		vrLoc = 0;
@@ -980,8 +980,8 @@
 	27DB50081227153C009FF1C7 /* TWConstants.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
-			sepNavSelRange = "{244, 0}";
-			sepNavVisRange = "{0, 752}";
+			sepNavSelRange = "{1084, 0}";
+			sepNavVisRange = "{0, 1836}";
 		};
 	};
 	27DB501A122716B7009FF1C7 /* PBXTextBookmark */ = {
@@ -1024,7 +1024,7 @@
 		vrLen = 220;
 		vrLoc = 0;
 	};
-	27DB50B4122725C8009FF1C7 /* TWAbstractPreferencesController.m:106 */ = {
+	27DB50B4122725C8009FF1C7 /* TWAbstractPreferencesController.m:120 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1036,7 +1036,7 @@
 		functionName = "-registerDefaults:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 106;
+		lineNumber = 120;
 		location = TermWeaver;
 		modificationTime = 306107479.555645;
 		originalNumberOfMultipleMatches = 1;
@@ -1056,16 +1056,16 @@
 	};
 	27DB5183122737BA009FF1C7 /* TWUtils.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 557}}";
-			sepNavSelRange = "{264, 0}";
-			sepNavVisRange = "{0, 358}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1083, 0}";
+			sepNavVisRange = "{0, 1303}";
 		};
 	};
 	27DB5184122737BA009FF1C7 /* TWUtils.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 557}}";
-			sepNavSelRange = "{467, 0}";
-			sepNavVisRange = "{0, 702}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1647}";
 			sepNavWindowFrame = "{{38, 239}, {896, 763}}";
 		};
 	};
@@ -1074,7 +1074,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 38;
-		rLoc = 363;
+		rLoc = 1447;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1084,7 +1084,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 13";
 		rLen = 0;
-		rLoc = 738;
+		rLoc = 1822;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -1094,23 +1094,23 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 47";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 1092;
 		vrLoc = 158;
 	};
 	27DB51AA122740EC009FF1C7 /* TWLoginItems.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 557}}";
-			sepNavSelRange = "{357, 0}";
-			sepNavVisRange = "{0, 404}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1344}";
 		};
 	};
 	27DB51AB122740EC009FF1C7 /* TWLoginItems.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1272, 1218}}";
-			sepNavSelRange = "{528, 0}";
-			sepNavVisRange = "{37, 1410}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 1470}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1574}";
 		};
 	};
 	27DB51BF122743B6009FF1C7 /* PBXTextBookmark */ = {
@@ -1118,9 +1118,9 @@
 		fRef = 27DB5183122737BA009FF1C7 /* TWUtils.h */;
 		name = "TWUtils.h: 16";
 		rLen = 0;
-		rLoc = 358;
+		rLoc = 1303;
 		rType = 0;
-		vrLen = 408;
+		vrLen = 358;
 		vrLoc = 0;
 	};
 	27DB51C0122743B6009FF1C7 /* PBXTextBookmark */ = {
@@ -1128,9 +1128,9 @@
 		fRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */;
 		name = "TWUtils.m: 34";
 		rLen = 0;
-		rLoc = 702;
+		rLoc = 1647;
 		rType = 0;
-		vrLen = 852;
+		vrLen = 702;
 		vrLoc = 0;
 	};
 	27DB51C1122743B6009FF1C7 /* PBXTextBookmark */ = {
@@ -1138,9 +1138,9 @@
 		fRef = 27DB51AA122740EC009FF1C7 /* TWLoginItems.h */;
 		name = "TWLoginItems.h: 20";
 		rLen = 0;
-		rLoc = 320;
+		rLoc = 1260;
 		rType = 0;
-		vrLen = 446;
+		vrLen = 404;
 		vrLoc = 0;
 	};
 	27DB51C2122743B6009FF1C7 /* PBXTextBookmark */ = {
@@ -1148,7 +1148,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 24";
 		rLen = 0;
-		rLoc = 400;
+		rLoc = 1340;
 		rType = 0;
 		vrLen = 1413;
 		vrLoc = 396;
@@ -1168,7 +1168,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 29";
 		rLen = 0;
-		rLoc = 307;
+		rLoc = 1236;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -1178,7 +1178,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 659;
@@ -1188,7 +1188,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 135";
 		rLen = 0;
-		rLoc = 2552;
+		rLoc = 3478;
 		rType = 0;
 		vrLen = 1385;
 		vrLoc = 2807;
@@ -1288,7 +1288,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 138";
 		rLen = 0;
-		rLoc = 2552;
+		rLoc = 3478;
 		rType = 0;
 		vrLen = 1528;
 		vrLoc = 2666;
@@ -1298,7 +1298,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 592;
@@ -1308,7 +1308,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 34";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 551;
@@ -1318,7 +1318,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 90";
 		rLen = 0;
-		rLoc = 3163;
+		rLoc = 4092;
 		rType = 0;
 		vrLen = 1074;
 		vrLoc = 1394;
@@ -1328,7 +1328,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 90";
 		rLen = 0;
-		rLoc = 3163;
+		rLoc = 4092;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 3;
@@ -1338,7 +1338,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 7";
 		rLen = 0;
-		rLoc = 391;
+		rLoc = 1475;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -1348,7 +1348,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 138";
 		rLen = 0;
-		rLoc = 2552;
+		rLoc = 3478;
 		rType = 0;
 		vrLen = 1481;
 		vrLoc = 2281;
@@ -1388,7 +1388,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 135";
 		rLen = 0;
-		rLoc = 2552;
+		rLoc = 3478;
 		rType = 0;
 		vrLen = 1542;
 		vrLoc = 2665;
@@ -1398,7 +1398,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 90";
 		rLen = 0;
-		rLoc = 3163;
+		rLoc = 4092;
 		rType = 0;
 		vrLen = 1305;
 		vrLoc = 3;
@@ -1408,7 +1408,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 551;
@@ -1418,7 +1418,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 551;
@@ -1428,7 +1428,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1154;
 		vrLoc = 551;
@@ -1438,7 +1438,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 44";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 866;
@@ -1448,7 +1448,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 551;
@@ -1458,7 +1458,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 127";
 		rLen = 0;
-		rLoc = 2425;
+		rLoc = 3351;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 4355;
@@ -1498,7 +1498,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 7";
 		rLen = 0;
-		rLoc = 391;
+		rLoc = 1475;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -1508,7 +1508,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 38;
-		rLoc = 363;
+		rLoc = 1447;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1518,7 +1518,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 38;
-		rLoc = 363;
+		rLoc = 1447;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1528,7 +1528,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 0;
-		rLoc = 401;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1538,7 +1538,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 0;
-		rLoc = 401;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1576,7 +1576,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 127";
 		rLen = 0;
-		rLoc = 2425;
+		rLoc = 3351;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 4355;
@@ -1586,7 +1586,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 551;
@@ -1596,7 +1596,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 551;
@@ -1606,7 +1606,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 551;
@@ -1616,7 +1616,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1164;
 		vrLoc = 551;
@@ -1626,7 +1626,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 42";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 866;
@@ -1636,7 +1636,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 35";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 551;
@@ -1657,7 +1657,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 35";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 551;
@@ -1667,7 +1667,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 31";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 499;
@@ -1677,7 +1677,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 31";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 499;
@@ -1687,7 +1687,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 98";
 		rLen = 0;
-		rLoc = 3176;
+		rLoc = 4105;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 499;
@@ -1697,7 +1697,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 98";
 		rLen = 0;
-		rLoc = 3176;
+		rLoc = 4105;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 498;
@@ -1707,7 +1707,7 @@
 		comments = "Method definition for '-setObject:forKey:' not found";
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		rLen = 1;
-		rLoc = 131;
+		rLoc = 145;
 		rType = 1;
 	};
 	27E0BE82122854DB00202169 /* PBXTextBookmark */ = {
@@ -1715,7 +1715,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 27";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 299;
@@ -1736,7 +1736,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 127";
 		rLen = 0;
-		rLoc = 2425;
+		rLoc = 3351;
 		rType = 0;
 		vrLen = 1183;
 		vrLoc = 5518;
@@ -1746,7 +1746,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 32";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1282;
 		vrLoc = 239;
@@ -1756,7 +1756,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 76";
 		rLen = 0;
-		rLoc = 2426;
+		rLoc = 3355;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 1374;
@@ -1766,7 +1766,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 76";
 		rLen = 0;
-		rLoc = 2426;
+		rLoc = 3355;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 1374;
@@ -1776,7 +1776,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 76";
 		rLen = 0;
-		rLoc = 2426;
+		rLoc = 3355;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 1374;
@@ -1786,7 +1786,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 41";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 792;
@@ -1796,7 +1796,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 41";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 299;
@@ -1806,7 +1806,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 127";
 		rLen = 0;
-		rLoc = 2425;
+		rLoc = 3351;
 		rType = 0;
 		vrLen = 1183;
 		vrLoc = 5518;
@@ -1816,7 +1816,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 77";
 		rLen = 0;
-		rLoc = 198;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 974;
 		vrLoc = 1686;
@@ -1826,7 +1826,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 69";
 		rLen = 0;
-		rLoc = 198;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 1472;
@@ -1836,7 +1836,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 47";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 91;
@@ -1846,7 +1846,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 158;
@@ -1856,7 +1856,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 158;
@@ -1866,7 +1866,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 41";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 792;
@@ -1876,7 +1876,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 471;
 		vrLoc = 700;
@@ -1886,7 +1886,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 158;
@@ -1896,7 +1896,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 7";
 		rLen = 0;
-		rLoc = 391;
+		rLoc = 1475;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -1906,7 +1906,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 0;
-		rLoc = 401;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -1916,7 +1916,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 29";
 		rLen = 0;
-		rLoc = 307;
+		rLoc = 1236;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -1926,7 +1926,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 20";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -1946,7 +1946,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 20";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2026,7 +2026,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 157;
@@ -2036,7 +2036,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 67";
 		rLen = 0;
-		rLoc = 198;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2046,7 +2046,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 11";
 		rLen = 0;
-		rLoc = 401;
+		rLoc = 1485;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -2056,7 +2056,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 7";
 		rLen = 0;
-		rLoc = 391;
+		rLoc = 1475;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -2066,7 +2066,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 38";
 		rLen = 0;
-		rLoc = 520;
+		rLoc = 1449;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 92;
@@ -2076,7 +2076,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2086,7 +2086,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 32";
 		rLen = 0;
-		rLoc = 339;
+		rLoc = 1268;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2096,7 +2096,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2106,7 +2106,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 67";
 		rLen = 0;
-		rLoc = 198;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 0;
@@ -2116,7 +2116,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 157;
@@ -2126,7 +2126,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 0;
-		rLoc = 1272;
+		rLoc = 2198;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 157;
@@ -2136,7 +2136,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 55;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 202;
@@ -2146,7 +2146,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 218";
 		rLen = 0;
-		rLoc = 5756;
+		rLoc = 6682;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 5070;
@@ -2154,15 +2154,15 @@
 	27E0BEC8122B232600202169 /* TWHotKeyPreference.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
-			sepNavSelRange = "{453, 0}";
-			sepNavVisRange = "{0, 459}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1392}";
 		};
 	};
 	27E0BEC9122B232600202169 /* TWHotKeyPreference.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 602}}";
-			sepNavSelRange = "{832, 0}";
-			sepNavVisRange = "{0, 874}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 798}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1555}";
 			sepNavWindowFrame = "{{61, 218}, {896, 763}}";
 		};
 	};
@@ -2171,7 +2171,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 55;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 158;
@@ -2181,7 +2181,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 115";
 		rLen = 0;
-		rLoc = 2082;
+		rLoc = 3008;
 		rType = 0;
 		vrLen = 1413;
 		vrLoc = 2037;
@@ -2191,9 +2191,9 @@
 		fRef = 27DB5183122737BA009FF1C7 /* TWUtils.h */;
 		name = "TWUtils.h: 16";
 		rLen = 0;
-		rLoc = 358;
+		rLoc = 1303;
 		rType = 0;
-		vrLen = 408;
+		vrLen = 358;
 		vrLoc = 0;
 	};
 	27E0BECE122B274900202169 /* PBXTextBookmark */ = {
@@ -2201,7 +2201,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 14";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2211,7 +2211,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 12";
 		rLen = 0;
-		rLoc = 178;
+		rLoc = 1111;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 0;
@@ -2231,7 +2231,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreferences.h: 12";
 		rLen = 0;
-		rLoc = 265;
+		rLoc = 1198;
 		rType = 0;
 		vrLen = 372;
 		vrLoc = 0;
@@ -2241,7 +2241,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 17";
 		rLen = 0;
-		rLoc = 166;
+		rLoc = 1095;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 299;
@@ -2271,7 +2271,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 41";
 		rLen = 0;
-		rLoc = 986;
+		rLoc = 1912;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 646;
@@ -2311,7 +2311,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreferences.h: 12";
 		rLen = 0;
-		rLoc = 265;
+		rLoc = 1198;
 		rType = 0;
 		vrLen = 372;
 		vrLoc = 0;
@@ -2321,7 +2321,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 12";
 		rLen = 0;
-		rLoc = 178;
+		rLoc = 1111;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 0;
@@ -2331,7 +2331,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 23";
 		rLen = 0;
-		rLoc = 178;
+		rLoc = 1111;
 		rType = 0;
 		vrLen = 490;
 		vrLoc = 0;
@@ -2361,7 +2361,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreferences.h: 11";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
@@ -2371,7 +2371,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 12";
 		rLen = 0;
-		rLoc = 178;
+		rLoc = 1111;
 		rType = 0;
 		vrLen = 573;
 		vrLoc = 0;
@@ -2381,7 +2381,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 12";
 		rLen = 0;
-		rLoc = 178;
+		rLoc = 1111;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 0;
@@ -2391,7 +2391,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreferences.m: 26";
 		rLen = 16;
-		rLoc = 606;
+		rLoc = 1539;
 		rType = 0;
 		vrLen = 798;
 		vrLoc = 0;
@@ -2411,7 +2411,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 14";
 		rLen = 0;
-		rLoc = 166;
+		rLoc = 1095;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 0;
@@ -2421,7 +2421,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreferences.h: 11";
 		rLen = 0;
-		rLoc = 216;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
@@ -2431,23 +2431,23 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreferences.h: 17";
 		rLen = 18;
-		rLoc = 295;
+		rLoc = 1228;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
 	};
 	27E0BEF5122C627700202169 /* TWHotKey+SRKeyCombo.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1077, 605}}";
-			sepNavSelRange = "{248, 21}";
-			sepNavVisRange = "{0, 344}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1277}";
 		};
 	};
 	27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1077, 605}}";
-			sepNavSelRange = "{497, 0}";
-			sepNavVisRange = "{0, 507}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1440}";
 		};
 	};
 	27E0BF3F122C6B5400202169 /* PBXTextBookmark */ = {
@@ -2465,7 +2465,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWPreferencesController.h: 14";
 		rLen = 0;
-		rLoc = 179;
+		rLoc = 1108;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2485,7 +2485,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWPreferencesController.m: 30";
 		rLen = 0;
-		rLoc = 1018;
+		rLoc = 1947;
 		rType = 0;
 		vrLen = 1213;
 		vrLoc = 288;
@@ -2495,7 +2495,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 227";
 		rLen = 0;
-		rLoc = 5755;
+		rLoc = 6681;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 5300;
@@ -2505,7 +2505,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreference.h: 12";
 		rLen = 0;
-		rLoc = 264;
+		rLoc = 1197;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
@@ -2525,7 +2525,7 @@
 		fRef = 27E0BEF5122C627700202169 /* TWHotKey+SRKeyCombo.h */;
 		name = "TWHotKey+SRKeyCombo.h: 15";
 		rLen = 21;
-		rLoc = 248;
+		rLoc = 1181;
 		rType = 0;
 		vrLen = 344;
 		vrLoc = 0;
@@ -2535,7 +2535,7 @@
 		fRef = 27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */;
 		name = "TWHotKey+SRKeyCombo.m: 24";
 		rLen = 0;
-		rLoc = 497;
+		rLoc = 1430;
 		rType = 0;
 		vrLen = 507;
 		vrLoc = 0;
@@ -2545,7 +2545,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 18";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 1314;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 0;
@@ -2610,16 +2610,16 @@
 	};
 	27E0BF57122C6D4300202169 /* TWPreferencesController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1619, 322}}";
-			sepNavSelRange = "{408, 28}";
-			sepNavVisRange = "{151, 343}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1423}";
 		};
 	};
 	27E0BF58122C6D4300202169 /* TWPreferencesController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1180, 1008}}";
-			sepNavSelRange = "{519, 0}";
-			sepNavVisRange = "{236, 1200}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 1358}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1472}";
 		};
 	};
 	27E0BF5A122CF3A900202169 /* PBXTextBookmark */ = {
@@ -2637,7 +2637,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 227";
 		rLen = 0;
-		rLoc = 5755;
+		rLoc = 6681;
 		rType = 0;
 		vrLen = 1367;
 		vrLoc = 4390;
@@ -2647,7 +2647,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 0;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 158;
@@ -2657,7 +2657,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 27";
 		rLen = 0;
-		rLoc = 526;
+		rLoc = 1466;
 		rType = 0;
 		vrLen = 1718;
 		vrLoc = 316;
@@ -2677,7 +2677,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 116";
 		rLen = 0;
-		rLoc = 489;
+		rLoc = 1418;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 444;
@@ -2687,7 +2687,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 2";
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 1;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2697,7 +2697,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 30";
 		rLen = 0;
-		rLoc = 1018;
+		rLoc = 1947;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 0;
@@ -2707,7 +2707,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 10";
 		rLen = 0;
-		rLoc = 199;
+		rLoc = 1128;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 0;
@@ -2717,7 +2717,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 2";
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 1;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -2727,7 +2727,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 63";
 		rLen = 0;
-		rLoc = 2228;
+		rLoc = 3157;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 0;
@@ -2737,9 +2737,9 @@
 		fRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */;
 		name = "TWUtils.m: 34";
 		rLen = 0;
-		rLoc = 702;
+		rLoc = 1647;
 		rType = 0;
-		vrLen = 852;
+		vrLen = 702;
 		vrLoc = 0;
 	};
 	27E0BF761231928B00202169 /* PBXTextBookmark */ = {
@@ -2747,9 +2747,9 @@
 		fRef = 27DB5183122737BA009FF1C7 /* TWUtils.h */;
 		name = "TWUtils.h: 13";
 		rLen = 0;
-		rLoc = 264;
+		rLoc = 1209;
 		rType = 0;
-		vrLen = 372;
+		vrLen = 358;
 		vrLoc = 0;
 	};
 	27E0BF771231928B00202169 /* PBXTextBookmark */ = {
@@ -2757,7 +2757,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 28";
 		rLen = 0;
-		rLoc = 528;
+		rLoc = 1468;
 		rType = 0;
 		vrLen = 1325;
 		vrLoc = 81;
@@ -2767,7 +2767,7 @@
 		fRef = 27DB51AA122740EC009FF1C7 /* TWLoginItems.h */;
 		name = "TWLoginItems.h: 19";
 		rLen = 0;
-		rLoc = 357;
+		rLoc = 1297;
 		rType = 0;
 		vrLen = 404;
 		vrLoc = 0;
@@ -2777,7 +2777,7 @@
 		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
 		name = "TWConstants.h: 1";
 		rLen = 26;
-		rLoc = 23;
+		rLoc = 1107;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 0;
@@ -2797,7 +2797,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 0;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 250;
@@ -2807,7 +2807,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 50";
 		rLen = 0;
-		rLoc = 377;
+		rLoc = 1303;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 436;
@@ -2817,7 +2817,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 19";
 		rLen = 0;
-		rLoc = 412;
+		rLoc = 1341;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 48;
@@ -2827,7 +2827,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 12";
 		rLen = 0;
-		rLoc = 224;
+		rLoc = 1153;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 0;
@@ -2837,7 +2837,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 13";
 		rLen = 0;
-		rLoc = 314;
+		rLoc = 1243;
 		rType = 0;
 		vrLen = 403;
 		vrLoc = 0;
@@ -2847,7 +2847,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 63";
 		rLen = 0;
-		rLoc = 2228;
+		rLoc = 3157;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 51;
@@ -2857,7 +2857,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 19";
 		rLen = 0;
-		rLoc = 488;
+		rLoc = 1417;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 0;
@@ -2867,7 +2867,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 49";
 		rLen = 0;
-		rLoc = 1402;
+		rLoc = 2331;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 329;
@@ -2877,7 +2877,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 7";
 		rLen = 0;
-		rLoc = 391;
+		rLoc = 1475;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 0;
@@ -2887,7 +2887,7 @@
 		fRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */;
 		name = "TWUtils.m: 22";
 		rLen = 0;
-		rLoc = 467;
+		rLoc = 1412;
 		rType = 0;
 		vrLen = 702;
 		vrLoc = 0;
@@ -2897,7 +2897,7 @@
 		fRef = 27DB5183122737BA009FF1C7 /* TWUtils.h */;
 		name = "TWUtils.h: 13";
 		rLen = 0;
-		rLoc = 264;
+		rLoc = 1209;
 		rType = 0;
 		vrLen = 358;
 		vrLoc = 0;
@@ -2907,7 +2907,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 281";
 		rLen = 0;
-		rLoc = 8974;
+		rLoc = 9900;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 355;
@@ -2917,7 +2917,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 0;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 203;
@@ -2927,7 +2927,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 50";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 1056;
 		vrLoc = 251;
@@ -2937,7 +2937,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 50";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 1056;
 		vrLoc = 251;
@@ -2957,12 +2957,12 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 50";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 470;
 		vrLoc = 837;
 	};
-	27E0BFAF123195E200202169 /* TWPreferencePane.m:71 */ = {
+	27E0BFAF123195E200202169 /* TWPreferencePane.m:85 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2974,7 +2974,7 @@
 		functionName = "-loadHotKeyPref_:recorder:stateButton:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 71;
+		lineNumber = 85;
 		location = TermWeaver;
 		modificationTime = 306107479.555771;
 		originalNumberOfMultipleMatches = 1;
@@ -2985,7 +2985,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 17";
 		rLen = 20;
-		rLoc = 341;
+		rLoc = 1274;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 29;
@@ -2995,7 +2995,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 55;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 203;
@@ -3005,7 +3005,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 80";
 		rLen = 6;
-		rLoc = 2118;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1243;
 		vrLoc = 1415;
@@ -3015,7 +3015,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 80";
 		rLen = 6;
-		rLoc = 2118;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1007;
 		vrLoc = 1651;
@@ -3025,7 +3025,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 80";
 		rLen = 6;
-		rLoc = 2118;
+		rLoc = 3044;
 		rType = 0;
 		vrLen = 1007;
 		vrLoc = 1651;
@@ -3035,7 +3035,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 50";
 		rLen = 0;
-		rLoc = 1274;
+		rLoc = 2200;
 		rType = 0;
 		vrLen = 470;
 		vrLoc = 837;
@@ -3045,7 +3045,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 71";
 		rLen = 0;
-		rLoc = 1899;
+		rLoc = 2825;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 1651;
@@ -3130,30 +3130,30 @@
 	};
 	27F151AC12248968000E6B4E /* TWHotKeyManager.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 592}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
 			sepNavSelRange = "{1436, 0}";
 			sepNavVisRange = "{0, 1445}";
 		};
 	};
 	27F151AD12248968000E6B4E /* TWHotKeyManager.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1180, 2856}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 2884}}";
 			sepNavSelRange = "{3666, 0}";
-			sepNavVisRange = "{349, 1139}";
+			sepNavVisRange = "{349, 1138}";
 		};
 	};
 	27F151B912248DD8000E6B4E /* TWHotKey.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1054, 714}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 714}}";
 			sepNavSelRange = "{1434, 0}";
-			sepNavVisRange = "{274, 1406}";
+			sepNavVisRange = "{0, 1610}";
 		};
 	};
 	27F151BA12248DD8000E6B4E /* TWHotKey.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1368, 1176}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 1162}}";
 			sepNavSelRange = "{1569, 0}";
-			sepNavVisRange = "{1410, 394}";
+			sepNavVisRange = "{0, 1489}";
 			sepNavWindowFrame = "{{38, 239}, {896, 763}}";
 		};
 	};
@@ -3204,7 +3204,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 75";
 		rLen = 0;
-		rLoc = 2066;
+		rLoc = 2992;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 886;
@@ -3214,7 +3214,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 2";
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 1;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -3234,7 +3234,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 20";
 		rLen = 0;
-		rLoc = 424;
+		rLoc = 1357;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 0;
@@ -3244,7 +3244,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 45";
 		rLen = 0;
-		rLoc = 1035;
+		rLoc = 1964;
 		rType = 0;
 		vrLen = 1298;
 		vrLoc = 411;
@@ -3254,7 +3254,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 38";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 410;
@@ -3264,7 +3264,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 49";
 		rLen = 0;
-		rLoc = 1402;
+		rLoc = 2331;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 451;
@@ -3274,7 +3274,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 33";
 		rLen = 0;
-		rLoc = 1017;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 1162;
 		vrLoc = 1265;
@@ -3284,7 +3284,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 78";
 		rLen = 0;
-		rLoc = 2426;
+		rLoc = 3355;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 1691;
@@ -3295,7 +3295,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 29;
+		rLoc = 43;
 		rType = 1;
 	};
 	27FB17C4123D698900B85F47 /* PBXTextBookmark */ = {
@@ -3303,7 +3303,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 29";
 		rLen = 0;
-		rLoc = 756;
+		rLoc = 1685;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 154;
@@ -3313,7 +3313,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 29";
 		rLen = 0;
-		rLoc = 756;
+		rLoc = 1685;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 154;
@@ -3322,7 +3322,7 @@
 		isa = PBXTextBookmark;
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		rLen = 0;
-		rLoc = 70;
+		rLoc = 84;
 		rType = 1;
 	};
 	27FB17CC123D6A6400B85F47 /* PBXTextBookmark */ = {
@@ -3330,7 +3330,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 71";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2782;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 1285;
@@ -3340,7 +3340,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 71";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2782;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 1285;
@@ -3350,7 +3350,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 71";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2782;
 		rType = 0;
 		vrLen = 1247;
 		vrLoc = 1508;
@@ -3360,7 +3360,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 71";
 		rLen = 0;
-		rLoc = 1856;
+		rLoc = 2782;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 1285;
@@ -3370,7 +3370,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 283";
 		rLen = 0;
-		rLoc = 8972;
+		rLoc = 9898;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1654;
@@ -3380,7 +3380,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 283";
 		rLen = 0;
-		rLoc = 8972;
+		rLoc = 9898;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 796;
@@ -3390,7 +3390,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 29";
 		rLen = 0;
-		rLoc = 756;
+		rLoc = 1685;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 151;
@@ -3400,7 +3400,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1246;
 		vrLoc = 356;
@@ -3410,7 +3410,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 356;
@@ -3420,7 +3420,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1201;
 		vrLoc = 356;
@@ -3430,7 +3430,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1166;
 		vrLoc = 356;
@@ -3440,7 +3440,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 494;
@@ -3450,7 +3450,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1220;
 		vrLoc = 412;
@@ -3460,7 +3460,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1157;
+		rLoc = 2086;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 494;
@@ -3470,7 +3470,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 283";
 		rLen = 0;
-		rLoc = 8972;
+		rLoc = 9898;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1654;
@@ -3480,7 +3480,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 47";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 535;
 		vrLoc = 905;
@@ -3490,7 +3490,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 48";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 563;
 		vrLoc = 905;
@@ -3501,7 +3501,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 104;
+		rLoc = 118;
 		rType = 1;
 	};
 	27FB1804123D7EDB00B85F47 /* PBXTextBookmark */ = {
@@ -3509,7 +3509,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 81";
 		rLen = 0;
-		rLoc = 2165;
+		rLoc = 3094;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 1823;
@@ -3519,7 +3519,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 81";
 		rLen = 0;
-		rLoc = 2165;
+		rLoc = 3094;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 1823;
@@ -3529,7 +3529,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 81";
 		rLen = 0;
-		rLoc = 2165;
+		rLoc = 3094;
 		rType = 0;
 		vrLen = 1047;
 		vrLoc = 1823;
@@ -3539,7 +3539,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 82";
 		rLen = 0;
-		rLoc = 2165;
+		rLoc = 3094;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 1843;
@@ -3549,7 +3549,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 52";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 980;
@@ -3559,7 +3559,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 50";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 959;
@@ -3569,7 +3569,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 50";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 589;
@@ -3579,7 +3579,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 20";
 		rLen = 0;
-		rLoc = 424;
+		rLoc = 1357;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 0;
@@ -3589,7 +3589,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 33";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 0;
@@ -3599,7 +3599,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 33";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 0;
@@ -3609,7 +3609,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 33";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 0;
@@ -3619,7 +3619,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 50";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 959;
@@ -3629,7 +3629,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 33";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 434;
 		vrLoc = 468;
@@ -3639,7 +3639,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 22";
 		rLen = 0;
-		rLoc = 447;
+		rLoc = 1380;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 0;
@@ -3649,7 +3649,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 50";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 589;
@@ -3659,7 +3659,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 46";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 589;
@@ -3669,7 +3669,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 46";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 589;
@@ -3679,7 +3679,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 46";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 589;
@@ -3689,7 +3689,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 33";
 		rLen = 0;
-		rLoc = 688;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 434;
 		vrLoc = 468;
@@ -3699,7 +3699,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 60";
 		rLen = 0;
-		rLoc = 1465;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 1413;
@@ -3709,7 +3709,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 60";
 		rLen = 0;
-		rLoc = 1465;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 1004;
@@ -3746,7 +3746,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 60";
 		rLen = 0;
-		rLoc = 1465;
+		rLoc = 2394;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 1413;
@@ -3776,7 +3776,7 @@
 		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
 		name = "TWHotKeyPreference.m: 39";
 		rLen = 0;
-		rLoc = 832;
+		rLoc = 1765;
 		rType = 0;
 		vrLen = 874;
 		vrLoc = 0;
@@ -3841,7 +3841,7 @@
 		vrLen = 394;
 		vrLoc = 1410;
 	};
-	27FB1843123D820800B85F47 /* TWAbstractPreferencesController.m:62 */ = {
+	27FB1843123D820800B85F47 /* TWAbstractPreferencesController.m:76 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3853,7 +3853,7 @@
 		functionName = "-setObject:forKey:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 62;
+		lineNumber = 76;
 		location = TermWeaver;
 		modificationTime = 306107479.555978;
 		originalNumberOfMultipleMatches = 1;
@@ -3874,7 +3874,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 49";
 		rLen = 0;
-		rLoc = 1402;
+		rLoc = 2331;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 412;
@@ -3884,7 +3884,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 1004;
@@ -3894,7 +3894,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 1004;
@@ -3904,7 +3904,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 1004;
@@ -3914,12 +3914,12 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1136;
 		vrLoc = 1004;
 	};
-	27FB184E123D822400B85F47 /* TWAbstractPreferencesController.m:51 */ = {
+	27FB184E123D822400B85F47 /* TWAbstractPreferencesController.m:65 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3931,7 +3931,7 @@
 		functionName = "-setObject:forKey:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 51;
+		lineNumber = 65;
 		location = TermWeaver;
 		modificationTime = 306107479.556113;
 		originalNumberOfMultipleMatches = 1;
@@ -3942,7 +3942,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 1004;
@@ -3952,7 +3952,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1004;
@@ -3962,7 +3962,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 59";
 		rLen = 0;
-		rLoc = 1462;
+		rLoc = 2391;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1004;
@@ -3982,7 +3982,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 48";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 980;
@@ -3992,7 +3992,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 48";
 		rLen = 0;
-		rLoc = 1378;
+		rLoc = 2307;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 1002;
@@ -4002,7 +4002,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1156;
+		rLoc = 2085;
 		rType = 0;
 		vrLen = 1074;
 		vrLoc = 627;
@@ -4012,7 +4012,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1156;
+		rLoc = 2085;
 		rType = 0;
 		vrLen = 1074;
 		vrLoc = 627;
@@ -4022,7 +4022,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1156;
+		rLoc = 2085;
 		rType = 0;
 		vrLen = 1074;
 		vrLoc = 627;
@@ -4032,7 +4032,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 40";
 		rLen = 0;
-		rLoc = 1156;
+		rLoc = 2085;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 627;
@@ -4041,7 +4041,7 @@
 		isa = PBXTextBookmark;
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		rLen = 0;
-		rLoc = 63;
+		rLoc = 77;
 		rType = 1;
 	};
 	27FB186D123D83A100B85F47 /* PBXTextBookmark */ = {
@@ -4049,7 +4049,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 68";
 		rLen = 0;
-		rLoc = 1466;
+		rLoc = 2395;
 		rType = 0;
 		vrLen = 496;
 		vrLoc = 1577;
@@ -4059,7 +4059,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 1006;
+		rLoc = 1935;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 356;
@@ -4069,7 +4069,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 1006;
+		rLoc = 1935;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 356;
@@ -4079,7 +4079,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 39";
 		rLen = 0;
-		rLoc = 1006;
+		rLoc = 1935;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 356;
@@ -4089,7 +4089,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 51";
 		rLen = 0;
-		rLoc = 1277;
+		rLoc = 2206;
 		rType = 0;
 		vrLen = 372;
 		vrLoc = 1028;
@@ -4099,7 +4099,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 49";
 		rLen = 0;
-		rLoc = 1402;
+		rLoc = 2331;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 451;
@@ -4109,7 +4109,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 48";
 		rLen = 55;
-		rLoc = 1218;
+		rLoc = 2144;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 158;
@@ -4119,7 +4119,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 61";
 		rLen = 0;
-		rLoc = 1407;
+		rLoc = 2333;
 		rType = 0;
 		vrLen = 1368;
 		vrLoc = 1233;
@@ -4129,7 +4129,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 34";
 		rLen = 0;
-		rLoc = 876;
+		rLoc = 1805;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 2029;
@@ -4139,7 +4139,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 94";
 		rLen = 0;
-		rLoc = 2292;
+		rLoc = 3221;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 2029;
@@ -4149,7 +4149,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 103";
 		rLen = 0;
-		rLoc = 2666;
+		rLoc = 3595;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 2029;
@@ -4172,7 +4172,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 116";
 		rLen = 0;
-		rLoc = 3656;
+		rLoc = 4582;
 		rType = 0;
 		vrLen = 1435;
 		vrLoc = 2453;
@@ -4182,7 +4182,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 119";
 		rLen = 0;
-		rLoc = 3626;
+		rLoc = 4552;
 		rType = 0;
 		vrLen = 1369;
 		vrLoc = 2453;
@@ -4192,7 +4192,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 119";
 		rLen = 0;
-		rLoc = 3626;
+		rLoc = 4552;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 2453;
@@ -4202,7 +4202,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 120";
 		rLen = 0;
-		rLoc = 3626;
+		rLoc = 4552;
 		rType = 0;
 		vrLen = 1323;
 		vrLoc = 2495;
@@ -4212,7 +4212,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 118";
 		rLen = 0;
-		rLoc = 3387;
+		rLoc = 4313;
 		rType = 0;
 		vrLen = 616;
 		vrLoc = 3048;
@@ -4222,7 +4222,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 110";
 		rLen = 0;
-		rLoc = 2879;
+		rLoc = 3808;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 2569;
@@ -4232,7 +4232,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 110";
 		rLen = 0;
-		rLoc = 2879;
+		rLoc = 3808;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 2569;
@@ -4242,7 +4242,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 110";
 		rLen = 0;
-		rLoc = 2879;
+		rLoc = 3808;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 1984;
@@ -4252,7 +4252,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 120";
 		rLen = 0;
-		rLoc = 3626;
+		rLoc = 4552;
 		rType = 0;
 		vrLen = 1350;
 		vrLoc = 2493;
@@ -4262,7 +4262,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 117";
 		rLen = 0;
-		rLoc = 3357;
+		rLoc = 4283;
 		rType = 0;
 		vrLen = 1430;
 		vrLoc = 2493;
@@ -4272,7 +4272,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 108";
 		rLen = 0;
-		rLoc = 2924;
+		rLoc = 3850;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 2493;
@@ -4312,7 +4312,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 110";
 		rLen = 0;
-		rLoc = 2879;
+		rLoc = 3808;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 1984;
@@ -4322,7 +4322,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 2";
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 1;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -4332,7 +4332,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 2";
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 1;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -4342,7 +4342,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 22";
 		rLen = 0;
-		rLoc = 392;
+		rLoc = 1321;
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 0;
@@ -4352,7 +4352,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 13";
 		rLen = 0;
-		rLoc = 260;
+		rLoc = 1189;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 0;
@@ -4362,7 +4362,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 92";
 		rLen = 0;
-		rLoc = 2122;
+		rLoc = 3051;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 2199;
@@ -4372,7 +4372,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 108";
 		rLen = 0;
-		rLoc = 2924;
+		rLoc = 3850;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 2493;
@@ -4382,7 +4382,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 113";
 		rLen = 0;
-		rLoc = 3113;
+		rLoc = 4039;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 2493;
@@ -4392,7 +4392,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 119";
 		rLen = 0;
-		rLoc = 3505;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 1553;
 		vrLoc = 2547;
@@ -4403,7 +4403,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 85;
+		rLoc = 99;
 		rType = 1;
 	};
 	27FB18AD123ECF7000B85F47 /* PBXTextBookmark */ = {
@@ -4411,7 +4411,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 85";
 		rLen = 0;
-		rLoc = 2233;
+		rLoc = 3159;
 		rType = 0;
 		vrLen = 1240;
 		vrLoc = 1536;
@@ -4421,7 +4421,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 31";
 		rLen = 0;
-		rLoc = 793;
+		rLoc = 1719;
 		rType = 0;
 		vrLen = 1134;
 		vrLoc = 157;
@@ -4431,7 +4431,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 35";
 		rLen = 0;
-		rLoc = 840;
+		rLoc = 1766;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 154;
@@ -4441,7 +4441,7 @@
 		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
 		name = "TWAbstractPreferencesController.h: 15";
 		rLen = 0;
-		rLoc = 263;
+		rLoc = 1192;
 		rType = 0;
 		vrLen = 518;
 		vrLoc = 0;
@@ -4451,7 +4451,7 @@
 		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
 		name = "TWHotKeyPreference.h: 24";
 		rLen = 0;
-		rLoc = 453;
+		rLoc = 1386;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
@@ -4461,7 +4461,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 20";
 		rLen = 0;
-		rLoc = 444;
+		rLoc = 1373;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 0;
@@ -4471,7 +4471,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 22";
 		rLen = 0;
-		rLoc = 512;
+		rLoc = 1441;
 		rType = 0;
 		vrLen = 1036;
 		vrLoc = 0;
@@ -4481,7 +4481,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 27";
 		rLen = 0;
-		rLoc = 476;
+		rLoc = 1405;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 0;
@@ -4520,7 +4520,7 @@
 		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
 		name = "TWPreferencePane.h: 10";
 		rLen = 0;
-		rLoc = 202;
+		rLoc = 1128;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 0;
@@ -4530,7 +4530,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 35";
 		rLen = 0;
-		rLoc = 840;
+		rLoc = 1766;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 154;
@@ -4540,7 +4540,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 28";
 		rLen = 0;
-		rLoc = 528;
+		rLoc = 1468;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 37;
@@ -4550,7 +4550,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 28";
 		rLen = 0;
-		rLoc = 528;
+		rLoc = 1468;
 		rType = 0;
 		vrLen = 1369;
 		vrLoc = 37;
@@ -4560,7 +4560,7 @@
 		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
 		name = "TWLoginItems.m: 28";
 		rLen = 0;
-		rLoc = 528;
+		rLoc = 1468;
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 37;
@@ -4570,7 +4570,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 20";
 		rLen = 0;
-		rLoc = 444;
+		rLoc = 1373;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 0;
@@ -4580,7 +4580,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 28;
-		rLoc = 408;
+		rLoc = 1337;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 0;
@@ -4590,7 +4590,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 28;
-		rLoc = 408;
+		rLoc = 1337;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 0;
@@ -4600,7 +4600,7 @@
 		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
 		name = "TWAbstractPreferencesController.m: 118";
 		rLen = 0;
-		rLoc = 2879;
+		rLoc = 3808;
 		rType = 0;
 		vrLen = 496;
 		vrLoc = 2650;
@@ -4610,7 +4610,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 28;
-		rLoc = 408;
+		rLoc = 1337;
 		rType = 0;
 		vrLen = 343;
 		vrLoc = 151;
@@ -4620,7 +4620,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 28;
-		rLoc = 408;
+		rLoc = 1337;
 		rType = 0;
 		vrLen = 494;
 		vrLoc = 0;
@@ -4630,7 +4630,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 43";
 		rLen = 0;
-		rLoc = 990;
+		rLoc = 1919;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 369;
@@ -4640,7 +4640,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 30";
 		rLen = 28;
-		rLoc = 552;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 369;
@@ -4650,7 +4650,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 30";
 		rLen = 28;
-		rLoc = 552;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 369;
@@ -4660,7 +4660,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 30";
 		rLen = 28;
-		rLoc = 552;
+		rLoc = 1481;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 369;
@@ -4670,7 +4670,7 @@
 		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
 		name = "TWPreferencesController.h: 18";
 		rLen = 28;
-		rLoc = 408;
+		rLoc = 1337;
 		rType = 0;
 		vrLen = 343;
 		vrLoc = 151;
@@ -4680,7 +4680,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 28";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 1448;
 		rType = 0;
 		vrLen = 476;
 		vrLoc = 369;
@@ -4690,7 +4690,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 28";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 1448;
 		rType = 0;
 		vrLen = 1661;
 		vrLoc = 543;
@@ -4700,7 +4700,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 35";
 		rLen = 0;
-		rLoc = 840;
+		rLoc = 1766;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 154;
@@ -4710,7 +4710,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 115";
 		rLen = 0;
-		rLoc = 3137;
+		rLoc = 4063;
 		rType = 0;
 		vrLen = 1426;
 		vrLoc = 2458;
@@ -4720,7 +4720,7 @@
 		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
 		name = "TWConstants.m: 6";
 		rLen = 0;
-		rLoc = 244;
+		rLoc = 1328;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 0;
@@ -4740,7 +4740,7 @@
 		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
 		name = "TWPreferencesController.m: 28";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 1448;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 236;
@@ -4750,7 +4750,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 115";
 		rLen = 0;
-		rLoc = 3137;
+		rLoc = 4063;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 2456;
@@ -4760,7 +4760,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 121";
 		rLen = 0;
-		rLoc = 3455;
+		rLoc = 4381;
 		rType = 0;
 		vrLen = 1369;
 		vrLoc = 2456;
@@ -4770,7 +4770,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 115";
 		rLen = 0;
-		rLoc = 3155;
+		rLoc = 4081;
 		rType = 0;
 		vrLen = 1485;
 		vrLoc = 2426;
@@ -4780,7 +4780,7 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 122";
 		rLen = 0;
-		rLoc = 3507;
+		rLoc = 4433;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 2426;
@@ -4790,10 +4790,386 @@
 		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
 		name = "TWPreferencePane.m: 116";
 		rLen = 0;
-		rLoc = 3172;
+		rLoc = 4098;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 2426;
+	};
+	27FB1909123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB5183122737BA009FF1C7 /* TWUtils.h */;
+		name = "TWUtils.h: 22";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 1303;
+		vrLoc = 0;
+	};
+	27FB190A123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */;
+		name = "TWUtils.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1647;
+		vrLoc = 0;
+	};
+	27FB190B123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB4FDF12270F8E009FF1C7 /* TWConstants.h */;
+		name = "TWConstants.h: 22";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 1485;
+		vrLoc = 0;
+	};
+	27FB190C123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB50081227153C009FF1C7 /* TWConstants.m */;
+		name = "TWConstants.m: 23";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 1836;
+		vrLoc = 0;
+	};
+	27FB190D123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27F151B912248DD8000E6B4E /* TWHotKey.h */;
+		name = "TWHotKey.h: 37";
+		rLen = 0;
+		rLoc = 1434;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 0;
+	};
+	27FB190E123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27F151BA12248DD8000E6B4E /* TWHotKey.m */;
+		name = "TWHotKey.m: 51";
+		rLen = 0;
+		rLoc = 1569;
+		rType = 0;
+		vrLen = 1489;
+		vrLoc = 0;
+	};
+	27FB190F123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */;
+		name = "TWAbstractPreferencesController.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1447;
+		vrLoc = 0;
+	};
+	27FB1910123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */;
+		name = "TWAbstractPreferencesController.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1644;
+		vrLoc = 0;
+	};
+	27FB1911123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761329612215F4100367AAB /* TWDefines.h */;
+		name = "TWDefines.h: 144";
+		rLen = 6;
+		rLoc = 5744;
+		rType = 0;
+		vrLen = 1537;
+		vrLoc = 0;
+	};
+	27FB1912123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB51AA122740EC009FF1C7 /* TWLoginItems.h */;
+		name = "TWLoginItems.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1344;
+		vrLoc = 0;
+	};
+	27FB1913123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */;
+		name = "TWLoginItems.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1574;
+		vrLoc = 0;
+	};
+	27FB1914123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BEC8122B232600202169 /* TWHotKeyPreference.h */;
+		name = "TWHotKeyPreference.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1392;
+		vrLoc = 0;
+	};
+	27FB1915123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */;
+		name = "TWHotKeyPreference.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1555;
+		vrLoc = 0;
+	};
+	27FB1916123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BEF5122C627700202169 /* TWHotKey+SRKeyCombo.h */;
+		name = "TWHotKey+SRKeyCombo.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 0;
+	};
+	27FB1917123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */;
+		name = "TWHotKey+SRKeyCombo.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 0;
+	};
+	27FB1918123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BF57122C6D4300202169 /* TWPreferencesController.h */;
+		name = "TWPreferencesController.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1423;
+		vrLoc = 0;
+	};
+	27FB1919123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */;
+		name = "TWPreferencesController.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1472;
+		vrLoc = 0;
+	};
+	27FB191A123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27049E4A1225573400BE2140 /* TWPreferencePane.h */;
+		name = "TWPreferencePane.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1675;
+		vrLoc = 0;
+	};
+	27FB191B123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */;
+		name = "TWPreferencePane.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 0;
+	};
+	27FB191C123ED5E500B85F47 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSPrefPaneIconLabel,
+		);
+		name = "/Users/krikava/Documents/Projects/Personal/TermWeaver/src/TermWeaverPreferencePane-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	27FB191D123ED5E500B85F47 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */;
+	};
+	27FB191E123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132211221519900367AAB /* TWFinderAppCWDDriver.h */;
+		name = "TWFinderAppCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1203;
+		vrLoc = 0;
+	};
+	27FB191F123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */;
+		name = "TWFinderAppCWDDriver.m: 59";
+		rLen = 0;
+		rLoc = 2022;
+		rType = 0;
+		vrLen = 1221;
+		vrLoc = 910;
+	};
+	27FB1920123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761322D122153EB00367AAB /* TWTerminalAppCWDDriver.h */;
+		name = "TWTerminalAppCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1347;
+		vrLoc = 0;
+	};
+	27FB1921123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */;
+		name = "TWTerminalAppCWDDriver.m: 214";
+		rLen = 6;
+		rLoc = 6370;
+		rType = 0;
+		vrLen = 1569;
+		vrLoc = 5667;
+	};
+	27FB1922123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132301221543000367AAB /* TWDefaultCWDDriver.h */;
+		name = "TWDefaultCWDDriver.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 0;
+	};
+	27FB1923123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */;
+		name = "TWDefaultCWDDriver.m: 27";
+		rLen = 29;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1757;
+		vrLoc = 0;
+	};
+	27FB1924123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* TWAgentAppDelegate.h */;
+		name = "TWAgentAppDelegate.h: 45";
+		rLen = 0;
+		rLoc = 1643;
+		rType = 0;
+		vrLen = 1610;
+		vrLoc = 39;
+	};
+	27FB1925123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */;
+		name = "TWAgentAppDelegate.m: 1";
+		rLen = 1082;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1636;
+		vrLoc = 0;
+	};
+	27FB1926123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 276132201221510400367AAB /* TWCWDDriver.h */;
+		name = "TWCWDDriver.h: 22";
+		rLen = 0;
+		rLoc = 1083;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 0;
+	};
+	27FB1927123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27F151AC12248968000E6B4E /* TWHotKeyManager.h */;
+		name = "TWHotKeyManager.h: 36";
+		rLen = 0;
+		rLoc = 1436;
+		rType = 0;
+		vrLen = 1445;
+		vrLoc = 0;
+	};
+	27FB1928123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27F151AD12248968000E6B4E /* TWHotKeyManager.m */;
+		name = "TWHotKeyManager.m: 150";
+		rLen = 0;
+		rLoc = 3666;
+		rType = 0;
+		vrLen = 1138;
+		vrLoc = 349;
+	};
+	27FB1929123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* TermWeaver_Prefix.pch */;
+		name = "TermWeaver_Prefix.pch: 1";
+		rLen = 162;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	27FB192A123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1205;
+		vrLoc = 0;
+	};
+	27FB192B123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */;
+		name = "TWAXUtils.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1163;
+		vrLoc = 0;
+	};
+	27FB192C123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */;
+		name = "TWAXUtils.m: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1696;
+		vrLoc = 0;
+	};
+	27FB192D123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */;
+		name = "TWAgentConstants.h: 14";
+		rLen = 0;
+		rLoc = 1220;
+		rType = 0;
+		vrLen = 288;
+		vrLoc = 0;
+	};
+	27FB192E123ED5E500B85F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */;
+		name = "TWAgentConstants.h: 21";
+		rLen = 0;
+		rLoc = 1082;
+		rType = 0;
+		vrLen = 1220;
+		vrLoc = 0;
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -4817,15 +5193,15 @@
 			272461901223FF3C00F16C01 /* TWAgentAppDelegate.m:247 */,
 			2724627E1224112B00F16C01 /* TWAgentAppDelegate.m:116 */,
 			27F151F11224963F000E6B4E /* TWHotKeyManager.m:146 */,
-			2704A06112257C5D00BE2140 /* TWAbstractPreferencesController.m:130 */,
-			2704A06312257C6200BE2140 /* TWAbstractPreferencesController.m:130 */,
-			2704A0F212259E5F00BE2140 /* TWPreferencePane.m:210 */,
+			2704A06112257C5D00BE2140 /* TWAbstractPreferencesController.m:144 */,
+			2704A06312257C6200BE2140 /* TWAbstractPreferencesController.m:144 */,
+			2704A0F212259E5F00BE2140 /* TWPreferencePane.m:224 */,
 			274C0D221225D192000AF2F1 /* TWAgentAppDelegate.m:337 */,
 			274C0D2A1225D1EB000AF2F1 /* TWAgentAppDelegate.m:337 */,
-			27DB50B4122725C8009FF1C7 /* TWAbstractPreferencesController.m:106 */,
-			27E0BFAF123195E200202169 /* TWPreferencePane.m:71 */,
-			27FB1843123D820800B85F47 /* TWAbstractPreferencesController.m:62 */,
-			27FB184E123D822400B85F47 /* TWAbstractPreferencesController.m:51 */,
+			27DB50B4122725C8009FF1C7 /* TWAbstractPreferencesController.m:120 */,
+			27E0BFAF123195E200202169 /* TWPreferencePane.m:85 */,
+			27FB1843123D820800B85F47 /* TWAbstractPreferencesController.m:76 */,
+			27FB184E123D822400B85F47 /* TWAbstractPreferencesController.m:65 */,
 		);
 		codeSenseManager = 2737811912030A8B00F8F8A5 /* Code sense */;
 		executables = (
@@ -5332,9 +5708,54 @@
 			27FB1900123ED42B00B85F47 /* PBXTextBookmark */ = 27FB1900123ED42B00B85F47 /* PBXTextBookmark */;
 			27FB1901123ED45400B85F47 /* PBXTextBookmark */ = 27FB1901123ED45400B85F47 /* PBXTextBookmark */;
 			27FB1904123ED47900B85F47 /* PBXTextBookmark */ = 27FB1904123ED47900B85F47 /* PBXTextBookmark */;
+			27FB1909123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1909123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190A123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190A123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190B123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190B123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190C123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190C123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190D123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190D123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190E123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190E123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB190F123ED5E500B85F47 /* PBXTextBookmark */ = 27FB190F123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1910123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1910123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1911123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1911123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1912123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1912123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1913123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1913123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1914123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1914123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1915123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1915123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1916123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1916123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1917123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1917123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1918123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1918123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1919123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1919123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB191A123ED5E500B85F47 /* PBXTextBookmark */ = 27FB191A123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB191B123ED5E500B85F47 /* PBXTextBookmark */ = 27FB191B123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB191C123ED5E500B85F47 /* PlistBookmark */ = 27FB191C123ED5E500B85F47 /* PlistBookmark */;
+			27FB191D123ED5E500B85F47 /* PBXBookmark */ = 27FB191D123ED5E500B85F47 /* PBXBookmark */;
+			27FB191E123ED5E500B85F47 /* PBXTextBookmark */ = 27FB191E123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB191F123ED5E500B85F47 /* PBXTextBookmark */ = 27FB191F123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1920123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1920123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1921123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1921123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1922123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1922123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1923123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1923123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1924123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1924123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1925123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1925123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1926123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1926123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1927123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1927123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1928123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1928123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB1929123ED5E500B85F47 /* PBXTextBookmark */ = 27FB1929123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB192A123ED5E500B85F47 /* PBXTextBookmark */ = 27FB192A123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB192B123ED5E500B85F47 /* PBXTextBookmark */ = 27FB192B123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB192C123ED5E500B85F47 /* PBXTextBookmark */ = 27FB192C123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB192D123ED5E500B85F47 /* PBXTextBookmark */ = 27FB192D123ED5E500B85F47 /* PBXTextBookmark */;
+			27FB192E123ED5E500B85F47 /* PBXTextBookmark */ = 27FB192E123ED5E500B85F47 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2737811812030A8B00F8F8A5 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1180, 598}}";
+			sepNavSelRange = "{1082, 0}";
+			sepNavVisRange = "{0, 1205}";
 		};
 	};
 	8D1107260486CEB800E47090 /* TermWeaverAgent */ = {
