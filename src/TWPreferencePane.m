@@ -7,96 +7,150 @@
 //
 
 #import "TWPreferencePane.h"
-
 #import "TWPreferencesController.h"
-
+#import "TWHotKeyPreference.h"
+#import "TWLoginItems.h"
+#import "TWHotKey+SRKeyCombo.h"
+#import "TWUtils.h"
+#import "TWConstants.h"
 #import "TWDefines.h"
+
+@interface TWPreferencePane (Private)
+
+- (BOOL) loadHotKeyPref_:(NSString *)prefKey recorder:(SRRecorderControl *)recorder stateButton:(NSButton *)stateButton;
+- (void) setHotKeyPref_:(NSString *)prefKey fromRecorder:(SRRecorderControl *)recorder;
+
+@end
 
 @implementation TWPreferencePane
 
 @synthesize preferences;
 
 - (id) initWithBundle:(NSBundle *)bundle {
-
+	
 	if (![super initWithBundle:bundle]) {
 		return nil;
 	}
-
-	// TODO: is this the best place
-	[self initializeDefaults];
+	
+	preferences = [TWPreferencesController sharedPreferences];	     
 	
 	return self;
-	
 }
 
 - (void) mainViewDidLoad
 {
-	NSLog(@"mainViewDidLoad");
-	//	NSNotificationCenter *nc = [NSDistributedNotificationCenter defaultCenter];
-	//	[nc addObserver:self selector:@selector(termWeaverLaunched:)   name:GROWL_IS_READY object:nil];
-	//	[nc addObserver:self selector:@selector(termWeaverTerminated:) name:GROWL_SHUTDOWN object:nil];
-	//	[nc addObserver:self selector:@selector(reloadPrefs:)     name:TermWeaverPreferencesChanged object:nil];
+	[self loadDefaults];
+	
+	NSNotificationCenter *notificationCenter = [NSDistributedNotificationCenter defaultCenter];
+	
+	[notificationCenter addObserver:self 
+						   selector:@selector(termWeaverLaunched:)   
+							   name:kTWAgentLaunchedNotification 
+							 object:nil];
+	
+	[notificationCenter addObserver:self 
+						   selector:@selector(termWeaverTerminated:) 
+							   name:kTWAgentTerminatedNotification 
+							 object:nil];
 	
 }
 
-- (void) willSelect {
-	NSLog(@"willSelect");
+- (void) willSelect {	
 	[self checkTermWeaverRunning];
 	
-	NSNumber *code = [preferences numberForKey:kHotKeyNewTerminalWindowCode];
-	NSNumber *flags = [preferences numberForKey:kHotKeyNewTerminalWindowFlags];
-
-	if (code && flags) {
-		KeyCombo hotKey = SRMakeKeyCombo([code integerValue], [flags integerValue]);
-		[newWindowHotKey setKeyCombo:hotKey];
-	} else {
-		NSLog(@"Invalid defaults for kHotKeyNewTerminalWindowCode/Flags");
-		[newWindowHotKeyEnabled setState:0];
-	}
-	
-	code = [preferences numberForKey:kHotKeyNewTerminalTabCode];
-	flags = [preferences numberForKey:kHotKeyNewTerminalTabFlags];
-
-	if (code && flags) {
-		KeyCombo hotKey = SRMakeKeyCombo([code integerValue], [flags integerValue]);
-		[newTabHotKey setKeyCombo:hotKey];
-	} else {
-		NSLog(@"Invalid defaults for kHotKeyNewTerminalTabCode/Flags");
-		[newTabHotKeyEnabled setState:0];
-	}
-	
+	[self loadHotKeyPref_:kTWNewWindowHotKeyKey recorder:newWindowHotKeyRecorder stateButton:newWindowHotKeyEnabledButton];
+	[self loadHotKeyPref_:kTWNewTabHotKeyKey recorder:newTabHotKeyRecorder stateButton:newWindowHotKeyEnabledButton];
+		
 }
 
-- (void) initializeDefaults {
-	preferences = [TWPreferencesController sharedPreferences];
+- (BOOL) loadHotKeyPref_:(NSString *)prefKey recorder:(SRRecorderControl *)recorder stateButton:(NSButton *)stateButton {
+	TWAssertNotNil(prefKey);
+	TWAssertNotNil(recorder);
+	TWAssertNotNil(stateButton);
 	
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"TermWaverDefaults" ofType:@"plist"];
+	TWHotKeyPreference *pref = [preferences objectForKey:prefKey];
 	
-	if (!path) {
-		// TODO: handle
+	if (!pref || ![pref isKindOfClass:[TWHotKeyPreference class]]) {
+		NSLog(@"No valied preference found for key: %@ - value: %@", prefKey, pref);
+		return NO;
 	}
+
+	// key
+	KeyCombo hotKey = [[pref hotKey] asKeyCombo];
+	[recorder setKeyCombo:hotKey];
 	
-	NSDictionary *defaultDefaults = [NSDictionary dictionaryWithContentsOfFile:path];
-	
-	if (!defaultDefaults) {
-		// handle
-	}
-	
-	[preferences registerDefaults:defaultDefaults];	
+	// enabled state
+	[stateButton setState:[pref enabled]];
+
+	return YES;
 }
+
+- (void) setHotKeyPref_:(NSString *)prefKey fromRecorder:(SRRecorderControl *)recorder stateButton:(NSButton *)stateButton {
+	TWAssertNotNil(prefKey);
+	TWAssertNotNil(recorder);
+	TWAssertNotNil(stateButton);
+	
+	KeyCombo hotKey = [recorder keyCombo];
+	
+	if (hotKey.code == -1) {
+		// TODO: better message
+		NSLog(@"No hotkey to be set for pref %@", prefKey);
+		return;
+	}
+
+	TWHotKeyPreference *pref = [[TWHotKeyPreference alloc] init];
+	[pref setHotKey:[TWHotKey hotKey:hotKey]];
+	[pref setEnabled:[stateButton state]];	
+
+	[preferences setObject:pref forKey:prefKey];
+}
+
+- (void) loadDefaults {
+	NSMutableDictionary *defaults = [NSMutableDictionary dictionaryWithCapacity:2];
+	
+	TWHotKeyPreference *hotKeyPref = [[TWHotKeyPreference alloc] init];
+
+	// TODO: extract constants
+	[hotKeyPref setEnabled:YES];
+	[hotKeyPref setHotKey:[[[TWHotKey alloc] initWithKeyCode:42 flags:NSCommandKeyMask|NSAlternateKeyMask] autorelease]];
+	[defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:hotKeyPref] forKey:kTWNewWindowHotKeyKey];
+	[hotKeyPref autorelease];
+	
+	hotKeyPref = [[TWHotKeyPreference alloc] init];
+	[hotKeyPref setEnabled:YES];
+	[hotKeyPref setHotKey:[[[TWHotKey alloc] initWithKeyCode:42 flags:NSCommandKeyMask|NSAlternateKeyMask|NSShiftKeyMask] autorelease]];
+	[defaults setObject:[NSKeyedArchiver archivedDataWithRootObject:hotKeyPref] forKey:kTWNewTabHotKeyKey];
+	[hotKeyPref autorelease];
+	
+	[preferences registerDefaults:defaults];	
+}
+
+#pragma mark TermWaver lifecycle handling methods
 
 - (void) checkTermWeaverRunning {
-	[startStopTermWeaver setEnabled:YES];
+	[startStopTermWeaverButton setEnabled:YES];
 	
 	if ([self isTermWeaverRunning]) {
-		[startStopTermWeaver setTitle:@"Stop TermWeaver"];
-		[termWeaverRunningStatus setStringValue:@"TermWeaver is running"];
+		[startStopTermWeaverButton setTitle:@"Stop TermWeaver"];
+		[termWeaverRunningStatusText setStringValue:@"TermWeaver is running"];
 	} else {
-		[startStopTermWeaver setTitle:@"Start TermWeaver"];
-		[termWeaverRunningStatus setStringValue:@"TermWeaver is stopped"];	
+		[startStopTermWeaverButton setTitle:@"Start TermWeaver"];
+		[termWeaverRunningStatusText setStringValue:@"TermWeaver is stopped"];	
 	}
 
 	[termWeaverRunningProgress stopAnimation:self];
+}
+
+- (void) termWeaverLaunched:(NSNotification *)notification {
+	TWDevLog(@"Received %@ notification", notification);
+	
+	[self checkTermWeaverRunning];	
+}
+
+- (void) termWeaverTerminated:(NSNotification *)notification {
+	TWDevLog(@"Received %@ notification", notification);
+
+	[self checkTermWeaverRunning];	
 }
 
 - (BOOL) isTermWeaverRunning {
@@ -107,7 +161,7 @@
 		NSDictionary *infoDict = (NSDictionary *)ProcessInformationCopyDictionary(&PSN, kProcessDictionaryIncludeAllInformationMask);
 		if(infoDict) {
 			NSString *bundleID = [infoDict objectForKey:(NSString *)kCFBundleIdentifierKey];
-			isRunning = bundleID && [bundleID isEqualToString:kTermWaverAgentBundleId];
+			isRunning = bundleID && [bundleID isEqualToString:kTWAgentAppBundleId];
 			CFMakeCollectable(infoDict);
 			[infoDict release];
 		}
@@ -118,31 +172,57 @@
 	return isRunning;
 }
 
-- (IBAction) startStopTermWeaverAction:(id)sender {
-#pragma unused(sender)
+- (IBAction) startStopTermWeaverAction:(id) __unused sender {	
 	// Our desired state is a toggle of the current state;
-	if ([self isTermWeaverRunning])
+	if ([self isTermWeaverRunning]) {
 		[self terminateTermWeaver];
-	else
+	} else {
 		[self launchTermWeaver];
+	}
 }
+
+- (IBAction) hotKeyEnablementChangedAction:(id)sender {
+	NSString *key = nil;
+	SRRecorderControl *recorder = nil;
+	
+	if (sender == newWindowHotKeyEnabledButton) {
+		key = kTWNewWindowHotKeyKey;
+		recorder = newWindowHotKeyRecorder;
+	} else if (sender == newTabHotKeyEnabledButton) {
+		key = kTWNewTabHotKeyKey;
+		recorder = newTabHotKeyRecorder;
+	} else {
+		// TODO: handle this
+	}
+	
+	[self setHotKeyPref_:key fromRecorder:recorder stateButton:sender];
+}
+
 
 /*!
  * @brief Launches TermWeaverHelperApp.
  */
 - (void) launchTermWeaver {
-	// Don't allow the button to be clicked while we update
-	[startStopTermWeaver setEnabled:NO];
+	TWDevLog(@"Launching TermWeaver Agent");
+
+	// don't allow the button to be clicked while we update
+	[startStopTermWeaverButton setEnabled:NO];
+
+	// start animation
 	[termWeaverRunningProgress startAnimation:self];
 	
-	// Update our status visible to the user
-	[termWeaverRunningStatus setStringValue:@"Launching TermWeaver..."];
+	// update our status visible to the user
+	[termWeaverRunningStatusText setStringValue:@"Launching TermWeaver..."];
 	
-	NSBundle *prefPaneBundle = [NSBundle bundleWithIdentifier:kTermWaverPreferencesPaneBundleId];
-	NSString *agentPath      = [prefPaneBundle pathForResource:@"TermWeaverAgent" ofType:@"app"];
-	NSURL *agentURL = [NSURL fileURLWithPath:agentPath];
 	
-	unsigned options = NSWorkspaceLaunchWithoutAddingToRecents | NSWorkspaceLaunchWithoutActivation | NSWorkspaceLaunchAsync;
+	NSURL *agentURL = GetBundleResourceURL([NSBundle bundleWithIdentifier:kTWPreferencesPaneBundleId], kTWAgenAppName, @"app");
+	if (!agentURL) {
+		// TODO: handle
+	}
+	
+	unsigned options = NSWorkspaceLaunchWithoutAddingToRecents 
+						| NSWorkspaceLaunchWithoutActivation 
+						| NSWorkspaceLaunchAsync;
 	
 	[[NSWorkspace sharedWorkspace] openURLs:[NSArray arrayWithObject:agentURL]
 	                withAppBundleIdentifier:nil
@@ -160,15 +240,18 @@
  * @brief Terminates running TermWeaverHelperApp instances.
  */
 - (void) terminateTermWeaver {
+	TWDevLog(@"Terminating TermWeaver Agent");
+
 	// Don't allow the button to be clicked while we update
-	[startStopTermWeaver setEnabled:NO];
+	[startStopTermWeaverButton setEnabled:NO];
 	[termWeaverRunningProgress startAnimation:self];
 	
 	// Update our status visible to the user
-	[termWeaverRunningStatus setStringValue:@"Terminating TermWeaver..."];
+	[termWeaverRunningStatusText setStringValue:@"Terminating TermWeaver..."];
 	
 	// Ask the TermWeaver Helper App to shutdown
-	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kTermWeaverShutdownRequest object:nil];
+	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kTWAgentShutdownRequestNotification 
+																   object:nil];
 	
 	// After 6 seconds force a status update, in case termWeaver didn't start/stop
 	[self performSelector:@selector(checkTermWeaverRunning)
@@ -176,18 +259,19 @@
 			   afterDelay:6.0];
 }
 
+#pragma mark ShortcutRecorder delegated methods
+
 - (BOOL)shortcutRecorder:(SRRecorderControl *)aRecorder isKeyCode:(NSInteger)keyCode andFlagsTaken:(NSUInteger)flags reason:(NSString **)aReason {
 
-	NSLog(@"shortcut: %@ %d %d",aRecorder,keyCode,flags); 
-
-	SRRecorderControl *other = aRecorder == newWindowHotKey ?newTabHotKey : newWindowHotKey;
+	SRRecorderControl *other = aRecorder == newWindowHotKeyRecorder ? newTabHotKeyRecorder : newWindowHotKeyRecorder;
 	KeyCombo otherHotKey = [other keyCombo];
 	
+	// check for duplicates
 	if ((keyCode != -1 && otherHotKey.code != -1) 
 		&& (keyCode == otherHotKey.code 
 			&& flags == otherHotKey.flags)) {
 			
-		*aReason = TWStr(@"it is already used by the %@ hotkey", aRecorder == newWindowHotKey ? @"new terminal tab" : @"new window tab");
+		*aReason = TWStr(@"it is already used by the %@ hotkey", aRecorder == newWindowHotKeyRecorder ? @"new terminal tab" : @"new window tab");
 		
 		return YES;
 	}
@@ -195,28 +279,23 @@
 	return NO;
 }
 
-- (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {
-#pragma unused(newKeyCombo)
+- (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {	
+	NSString *key = nil;
+	NSButton *stateButton = nil;
 	
-	if (aRecorder == newTabHotKey) {		
-		KeyCombo hotKey = [newTabHotKey keyCombo];
-		
-		[newTabHotKeyEnabled setState:(hotKey.code == -1 ? 0 : 1)];
-		if (hotKey.code != -1) {
-			[preferences setValue:[NSNumber numberWithInt:hotKey.code] forKey:kHotKeyNewTerminalTabCode];
-			[preferences setValue:[NSNumber numberWithInt:hotKey.flags] forKey:kHotKeyNewTerminalTabFlags];
-		}
-	} else if (aRecorder == newWindowHotKey) {
-		KeyCombo hotKey = [newWindowHotKey keyCombo];
-		
-		[newWindowHotKeyEnabled setState:(hotKey.code == -1 ? 0 : 1)];		
-		if (hotKey.code != -1) {
-			[preferences setValue:[NSNumber numberWithInt:hotKey.code] forKey:kHotKeyNewTerminalWindowCode];
-			[preferences setValue:[NSNumber numberWithInt:hotKey.flags] forKey:kHotKeyNewTerminalWindowFlags];
-		}
+	if (aRecorder == newWindowHotKeyRecorder) {		
+		key = kTWNewWindowHotKeyKey;
+		stateButton = newWindowHotKeyEnabledButton;
+	} else if (aRecorder == newTabHotKeyRecorder) {
+		key = kTWNewTabHotKeyKey;
+		stateButton = newTabHotKeyEnabledButton;
 	} else {
 		// TODO: handle this
-	}	
+	}
+	
+	[stateButton setState:(newKeyCombo.code == -1 ? 0 : 1)];
+	
+	[self setHotKeyPref_:key fromRecorder:aRecorder stateButton:stateButton];			
 }
 
 @end

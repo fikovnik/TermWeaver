@@ -10,36 +10,41 @@
 
 #import <ShortcutRecorder/SRRecorderControl.h>
 
-#import "TWPreferencesController.h"
+@class TWPreferencesController;
 
 @interface TWPreferencePane : NSPreferencePane 
 {
+	@private
+	
 	TWPreferencesController *preferences;
 	
-	IBOutlet NSButton *startStopTermWeaver;
-	IBOutlet NSTextField *termWeaverRunningStatus;
+	IBOutlet NSButton *startStopTermWeaverButton;
+	IBOutlet NSTextField *termWeaverRunningStatusText;
 	IBOutlet NSProgressIndicator *termWeaverRunningProgress;
 
-	IBOutlet NSButton *newWindowHotKeyEnabled;
-	IBOutlet NSButton *newTabHotKeyEnabled;
-	IBOutlet SRRecorderControl *newWindowHotKey;
-	IBOutlet SRRecorderControl *newTabHotKey;
+	IBOutlet NSButton *newWindowHotKeyEnabledButton;
+	IBOutlet NSButton *newTabHotKeyEnabledButton;
+	IBOutlet SRRecorderControl *newWindowHotKeyRecorder;
+	IBOutlet SRRecorderControl *newTabHotKeyRecorder;
 }
 
 @property(readonly) TWPreferencesController *preferences;
 
-- (id)initWithBundle:(NSBundle *)bundle;
+- (id) initWithBundle:(NSBundle *)bundle;
 
 - (void) mainViewDidLoad;
 - (void) willSelect;
 
+- (void) loadDefaults;
 
-- (void) initializeDefaults;
 - (void) checkTermWeaverRunning;
 - (BOOL) isTermWeaverRunning;
 - (void) launchTermWeaver;
 - (void) terminateTermWeaver;
+- (void) termWeaverLaunched:(NSNotification *)notification;
+- (void) termWeaverTerminated:(NSNotification *)notification;
 
 - (IBAction) startStopTermWeaverAction:(id)sender;
+- (IBAction) hotKeyEnablementChangedAction:(id)sender;
 
 @end

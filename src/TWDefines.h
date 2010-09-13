@@ -62,6 +62,8 @@ description:__VA_ARGS__];                             \
 }                                                                       \
 } while(0)
 
+#define TWAssertNotNil(var) TWAssert(var != nil, TWStr(@"Variabe %@ must not be nil", @#var));
+
 #else // !defined(NS_BLOCK_ASSERTIONS)
 #define TWAssert(condition, ...) do { } while (0)
 #endif // !defined(NS_BLOCK_ASSERTIONS)

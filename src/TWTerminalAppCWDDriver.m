@@ -27,7 +27,7 @@
 
 #import "TWDefines.h"
 
-static NSString *const TERMINAL_APP_ID = @"com.apple.Terminal"; 
+static NSString *const kTerminalAppBundeId = @"com.apple.Terminal"; 
 
 @implementation TWTerminalAppCWDDriver
 
@@ -48,9 +48,10 @@ static NSString *const TERMINAL_APP_ID = @"com.apple.Terminal";
 	[super dealloc];
 }
 
+	// TODO: modify == nil to !
 - (NSString *) getCWDFromApplication:(AXUIElementRef)application error:(NSError **)error {
 	
-	TerminalApplication *terminalApp = [SBApplication applicationWithBundleIdentifier:TERMINAL_APP_ID];
+	TerminalApplication *terminalApp = [SBApplication applicationWithBundleIdentifier:kTerminalAppBundeId];
 	
 	if (![terminalApp isRunning]) {
 		TWDevLog(@"Terminal is not running");		

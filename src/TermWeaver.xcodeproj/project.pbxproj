@@ -17,11 +17,9 @@
 		27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */; };
 		27049F8D1225657700BE2140 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27049F9D1225669800BE2140 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
-		27049FD812256F1B00BE2140 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWPreferencesController.m */; };
+		27049FD812256F1B00BE2140 /* TWAbstractPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */; };
 		2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* TermWeaverAgent.app */; };
-		2704A0C812259A0D00BE2140 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWPreferencesController.m */; };
-		274C0CBF1225C780000AF2F1 /* TermWaverDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */; };
-		274C0CC01225C780000AF2F1 /* TermWaverDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */; };
+		2704A0C812259A0D00BE2140 /* TWAbstractPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */; };
 		276132231221519900367AAB /* TWFinderAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */; };
 		2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */; };
 		276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */; };
@@ -29,9 +27,23 @@
 		278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 278FC55912241F4200F1F0AD /* RegexKitLite.m */; };
 		27DB4E101226E8BA009FF1C7 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27DB4E2B1226E919009FF1C7 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
+		27DB4FB712270A3E009FF1C7 /* TWAXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */; };
+		27DB50091227153C009FF1C7 /* TWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB50081227153C009FF1C7 /* TWConstants.m */; };
+		27DB500A1227153C009FF1C7 /* TWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB50081227153C009FF1C7 /* TWConstants.m */; };
+		27DB5185122737BA009FF1C7 /* TWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */; };
+		27DB5186122737BA009FF1C7 /* TWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB5184122737BA009FF1C7 /* TWUtils.m */; };
+		27DB51AC122740EC009FF1C7 /* TWLoginItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */; };
+		27E0BECA122B232600202169 /* TWHotKeyPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */; };
+		27E0BEF7122C627700202169 /* TWHotKey+SRKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */; };
+		27E0BF2A122C691900202169 /* TWHotKey+SRKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */; };
+		27E0BF2E122C699F00202169 /* TWHotKeyPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BEC9122B232600202169 /* TWHotKeyPreference.m */; };
+		27E0BF37122C6A9C00202169 /* TWHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151BA12248DD8000E6B4E /* TWHotKey.m */; };
+		27E0BF59122C6D4300202169 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */; };
 		27F1513812248209000E6B4E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1513712248209000E6B4E /* Carbon.framework */; };
 		27F151AE12248968000E6B4E /* TWHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151AD12248968000E6B4E /* TWHotKeyManager.m */; };
 		27F151BB12248DD8000E6B4E /* TWHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F151BA12248DD8000E6B4E /* TWHotKey.m */; };
+		27FB18BE123ED06700B85F47 /* TWPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E0BF58122C6D4300202169 /* TWPreferencesController.m */; };
+		27FB18C7123ED0A100B85F47 /* TWLoginItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB51AB122740EC009FF1C7 /* TWLoginItems.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -76,7 +88,7 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* TWAgentAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAgentAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAgentAppDelegate.m; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = TWAgentAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* TermWeaver_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermWeaver_Prefix.pch; sourceTree = "<group>"; };
 		27049E27122553FA00BE2140 /* TermWeaver.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermWeaver.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		27049E2E1225540B00BE2140 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
@@ -88,10 +100,9 @@
 		27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermWeaverPreferencePane.xib; sourceTree = "<group>"; };
 		27049F7B1225633700BE2140 /* TeamWeaverPreferencePane_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamWeaverPreferencePane_Prefix.pch; sourceTree = "<group>"; };
 		27049F8C1225657700BE2140 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShortcutRecorder.framework; path = "/Users/krikava/Development/objc/shortcutrecorder-read-only/build/Release/ShortcutRecorder.framework"; sourceTree = "<absolute>"; };
-		27049FD612256F1B00BE2140 /* TWPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPreferencesController.h; sourceTree = "<group>"; };
-		27049FD712256F1B00BE2140 /* TWPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPreferencesController.m; sourceTree = "<group>"; };
+		27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAbstractPreferencesController.h; sourceTree = "<group>"; };
+		27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAbstractPreferencesController.m; sourceTree = "<group>"; };
 		272A5539122316B000341171 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
-		274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TermWaverDefaults.plist; sourceTree = "<group>"; };
 		276132201221510400367AAB /* TWCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCWDDriver.h; sourceTree = "<group>"; };
 		276132211221519900367AAB /* TWFinderAppCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFinderAppCWDDriver.h; sourceTree = "<group>"; };
 		276132221221519900367AAB /* TWFinderAppCWDDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFinderAppCWDDriver.m; sourceTree = "<group>"; };
@@ -104,6 +115,21 @@
 		2761343B12217D9E00367AAB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
 		278FC55812241F4200F1F0AD /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = external/RegexKitLite/RegexKitLite.h; sourceTree = "<group>"; };
 		278FC55912241F4200F1F0AD /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = external/RegexKitLite/RegexKitLite.m; sourceTree = "<group>"; };
+		27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAXUtils.h; sourceTree = "<group>"; };
+		27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAXUtils.m; sourceTree = "<group>"; };
+		27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAgentConstants.h; sourceTree = "<group>"; };
+		27DB4FDF12270F8E009FF1C7 /* TWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWConstants.h; sourceTree = "<group>"; };
+		27DB50081227153C009FF1C7 /* TWConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWConstants.m; sourceTree = "<group>"; };
+		27DB5183122737BA009FF1C7 /* TWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWUtils.h; sourceTree = "<group>"; };
+		27DB5184122737BA009FF1C7 /* TWUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWUtils.m; sourceTree = "<group>"; };
+		27DB51AA122740EC009FF1C7 /* TWLoginItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLoginItems.h; sourceTree = "<group>"; };
+		27DB51AB122740EC009FF1C7 /* TWLoginItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLoginItems.m; sourceTree = "<group>"; };
+		27E0BEC8122B232600202169 /* TWHotKeyPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHotKeyPreference.h; sourceTree = "<group>"; };
+		27E0BEC9122B232600202169 /* TWHotKeyPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWHotKeyPreference.m; sourceTree = "<group>"; };
+		27E0BEF5122C627700202169 /* TWHotKey+SRKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWHotKey+SRKeyCombo.h"; sourceTree = "<group>"; };
+		27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWHotKey+SRKeyCombo.m"; sourceTree = "<group>"; };
+		27E0BF57122C6D4300202169 /* TWPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPreferencesController.h; sourceTree = "<group>"; };
+		27E0BF58122C6D4300202169 /* TWPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPreferencesController.m; sourceTree = "<group>"; };
 		27E34B2212218A5400E66481 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
 		27F1513712248209000E6B4E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		27F151AC12248968000E6B4E /* TWHotKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWHotKeyManager.h; sourceTree = "<group>"; };
@@ -202,9 +228,10 @@
 				276132201221510400367AAB /* TWCWDDriver.h */,
 				27F151AC12248968000E6B4E /* TWHotKeyManager.h */,
 				27F151AD12248968000E6B4E /* TWHotKeyManager.m */,
-				27F151B912248DD8000E6B4E /* TWHotKey.h */,
-				27F151BA12248DD8000E6B4E /* TWHotKey.m */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */,
+				27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */,
+				27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -240,25 +267,30 @@
 			isa = PBXGroup;
 			children = (
 				27049FD512256EF800BE2140 /* Classes */,
-				27049FB3122567EF00BE2140 /* Resources */,
 			);
 			name = Common;
-			sourceTree = "<group>";
-		};
-		27049FB3122567EF00BE2140 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				274C0CBE1225C780000AF2F1 /* TermWaverDefaults.plist */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		27049FD512256EF800BE2140 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				27049FD612256F1B00BE2140 /* TWPreferencesController.h */,
-				27049FD712256F1B00BE2140 /* TWPreferencesController.m */,
+				27DB5183122737BA009FF1C7 /* TWUtils.h */,
+				27DB5184122737BA009FF1C7 /* TWUtils.m */,
+				27DB4FDF12270F8E009FF1C7 /* TWConstants.h */,
+				27DB50081227153C009FF1C7 /* TWConstants.m */,
+				27F151B912248DD8000E6B4E /* TWHotKey.h */,
+				27F151BA12248DD8000E6B4E /* TWHotKey.m */,
+				27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */,
+				27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */,
 				2761329612215F4100367AAB /* TWDefines.h */,
+				27DB51AA122740EC009FF1C7 /* TWLoginItems.h */,
+				27DB51AB122740EC009FF1C7 /* TWLoginItems.m */,
+				27E0BEC8122B232600202169 /* TWHotKeyPreference.h */,
+				27E0BEC9122B232600202169 /* TWHotKeyPreference.m */,
+				27E0BEF5122C627700202169 /* TWHotKey+SRKeyCombo.h */,
+				27E0BEF6122C627700202169 /* TWHotKey+SRKeyCombo.m */,
+				27E0BF57122C6D4300202169 /* TWPreferencesController.h */,
+				27E0BF58122C6D4300202169 /* TWPreferencesController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -413,7 +445,6 @@
 				2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */,
 				27049E501225576B00BE2140 /* TermWeaverPreferencePane.tiff in Resources */,
 				27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */,
-				274C0CBF1225C780000AF2F1 /* TermWaverDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +454,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				274C0CC01225C780000AF2F1 /* TermWaverDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +465,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				27049E4C1225573400BE2140 /* TWPreferencePane.m in Sources */,
-				27049FD812256F1B00BE2140 /* TWPreferencesController.m in Sources */,
+				27049FD812256F1B00BE2140 /* TWAbstractPreferencesController.m in Sources */,
+				27DB500A1227153C009FF1C7 /* TWConstants.m in Sources */,
+				27DB5186122737BA009FF1C7 /* TWUtils.m in Sources */,
+				27DB51AC122740EC009FF1C7 /* TWLoginItems.m in Sources */,
+				27E0BF37122C6A9C00202169 /* TWHotKey.m in Sources */,
+				27E0BECA122B232600202169 /* TWHotKeyPreference.m in Sources */,
+				27E0BEF7122C627700202169 /* TWHotKey+SRKeyCombo.m in Sources */,
+				27E0BF59122C6D4300202169 /* TWPreferencesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +480,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2704A0C812259A0D00BE2140 /* TWPreferencesController.m in Sources */,
+				27FB18BE123ED06700B85F47 /* TWPreferencesController.m in Sources */,
+				27E0BF2E122C699F00202169 /* TWHotKeyPreference.m in Sources */,
+				27E0BF2A122C691900202169 /* TWHotKey+SRKeyCombo.m in Sources */,
+				27FB18C7123ED0A100B85F47 /* TWLoginItems.m in Sources */,
+				2704A0C812259A0D00BE2140 /* TWAbstractPreferencesController.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* TWAgentAppDelegate.m in Sources */,
 				276132231221519900367AAB /* TWFinderAppCWDDriver.m in Sources */,
@@ -452,6 +493,9 @@
 				278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */,
 				27F151AE12248968000E6B4E /* TWHotKeyManager.m in Sources */,
 				27F151BB12248DD8000E6B4E /* TWHotKey.m in Sources */,
+				27DB4FB712270A3E009FF1C7 /* TWAXUtils.m in Sources */,
+				27DB50091227153C009FF1C7 /* TWConstants.m in Sources */,
+				27DB5185122737BA009FF1C7 /* TWUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +613,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Development/objc/Appscript/src/Appscript/build/Release_10.5_32_64_GC\"",
 					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -591,7 +634,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Development/objc/Appscript/src/Appscript/build/Release_10.5_32_64_GC\"",
 					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
 				);
 				GCC_MODEL_TUNING = G5;

@@ -22,33 +22,65 @@
 
 #import "TWHotKey.h"
 
+#import "TWDefines.h"
+
+NSString *const kTWHotKeyCodePrefKey = @"keyCode"; 
+NSString *const kTWHotKeyFlagsPrefKey = @"flags";
 
 @implementation TWHotKey
 
-@synthesize mId;
-@synthesize mKeyCode;
-@synthesize mModifiers;
-@synthesize mHandler;
-@synthesize mProvider;
-@synthesize mUserData;
+@synthesize keyCode;
+@synthesize flags;
 
-- (id) initWithKeyCode:(NSInteger)keyCode modifiers:(NSInteger)modifiers handler:(SEL)handler provider:(id)provider userData:(id)userData {
+- (id) initWithKeyCode:(NSInteger)aKeyCode flags:(NSInteger)aFlags {
 	
 	if (![super init]) {
 		return nil;
 	}
+
+	// TODO: assert that the code and modifiers make sense
 	
-	// TODO: assert
-	
-	mKeyCode = keyCode;
-	mModifiers = modifiers;
-	mHandler = handler;
-	mProvider = provider;
-	mUserData = userData;
+	keyCode = aKeyCode;
+	flags = aFlags;
 	
 	return self;
-
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	
+	NSInteger aKeyCode = [aDecoder decodeIntegerForKey:kTWHotKeyCodePrefKey];
+	NSInteger aFlags = [aDecoder decodeIntegerForKey:kTWHotKeyFlagsPrefKey];
+
+	// TODO: check
+
+	if (![self initWithKeyCode:aKeyCode flags:aFlags]) {
+		return nil;
+	}
+	
+	return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+	[aCoder encodeInteger:keyCode forKey:kTWHotKeyCodePrefKey];
+	[aCoder encodeInteger:flags forKey:kTWHotKeyFlagsPrefKey];
+}
+
+
+- (NSString *) description {
+	return TWStr(@"code: %d flags: %d", keyCode, flags);
+}
+
+- (BOOL) isEqualTo:(id)object {
+
+	if ([object isKindOfClass:[self class]] == NO) {
+		return NO;
+	}
+	
+	TWHotKey *other = (TWHotKey *) object;
+	return (keyCode == [other keyCode]
+			&& flags == [other flags]);
+}
+
+// TODO: add hash
 
 @end

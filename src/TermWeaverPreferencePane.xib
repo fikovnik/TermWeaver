@@ -135,7 +135,7 @@
 							<reference key="NSSuperview" ref="725765206"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="559706527">
-								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents">Hot key for new terminal window</string>
 								<reference key="NSSupport" ref="519332847"/>
@@ -162,7 +162,7 @@
 							<reference key="NSSuperview" ref="725765206"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="448799417">
-								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents">Hot key for new terminal tab</string>
 								<reference key="NSSupport" ref="519332847"/>
@@ -184,7 +184,7 @@
 							<reference key="NSSuperview" ref="725765206"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="121801650">
-								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
 								<string key="NSContents">Start TeamWeaver at login</string>
 								<reference key="NSSupport" ref="519332847"/>
@@ -313,92 +313,12 @@
 					<int key="connectionID">813</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: preferences.shouldStartTermWeaverAtLogin</string>
-						<reference key="source" ref="777554829"/>
-						<reference key="destination" ref="1021"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="777554829"/>
-							<reference key="NSDestination" ref="1021"/>
-							<string key="NSLabel">value: preferences.shouldStartTermWeaverAtLogin</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">preferences.shouldStartTermWeaverAtLogin</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">838</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: preferences.hotKeyNewTerminalWindowEnabled</string>
-						<reference key="source" ref="228564220"/>
-						<reference key="destination" ref="1021"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="228564220"/>
-							<reference key="NSDestination" ref="1021"/>
-							<string key="NSLabel">value: preferences.hotKeyNewTerminalWindowEnabled</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">preferences.hotKeyNewTerminalWindowEnabled</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">840</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: preferences.hotKeyNewTerminalTabEnabled</string>
-						<reference key="source" ref="294965109"/>
-						<reference key="destination" ref="1021"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="294965109"/>
-							<reference key="NSDestination" ref="1021"/>
-							<string key="NSLabel">value: preferences.hotKeyNewTerminalTabEnabled</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">preferences.hotKeyNewTerminalTabEnabled</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">842</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: preferences.hotKeyNewTerminalTab</string>
-						<reference key="source" ref="989278637"/>
-						<reference key="destination" ref="1021"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="989278637"/>
-							<reference key="NSDestination" ref="1021"/>
-							<string key="NSLabel">value: preferences.hotKeyNewTerminalTab</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">preferences.hotKeyNewTerminalTab</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">846</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">startStopTermWeaver</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="162401760"/>
-					</object>
-					<int key="connectionID">849</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">startStopTermWeaverAction:</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="162401760"/>
 					</object>
 					<int key="connectionID">851</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">termWeaverRunningStatus</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="488396674"/>
-					</object>
-					<int key="connectionID">852</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -426,35 +346,83 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">newWindowHotKey</string>
+						<string key="label">newWindowHotKeyRecorder</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="926272744"/>
 					</object>
-					<int key="connectionID">857</int>
+					<int key="connectionID">862</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">newTabHotKey</string>
+						<string key="label">newTabHotKeyRecorder</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="989278637"/>
 					</object>
-					<int key="connectionID">858</int>
+					<int key="connectionID">863</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">newWindowHotKeyEnabled</string>
+						<string key="label">startStopTermWeaverButton</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="162401760"/>
+					</object>
+					<int key="connectionID">866</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">termWeaverRunningStatusText</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="488396674"/>
+					</object>
+					<int key="connectionID">867</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">newWindowHotKeyEnabledButton</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="228564220"/>
 					</object>
-					<int key="connectionID">860</int>
+					<int key="connectionID">868</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">newTabHotKeyEnabled</string>
+						<string key="label">newTabHotKeyEnabledButton</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="294965109"/>
 					</object>
-					<int key="connectionID">861</int>
+					<int key="connectionID">869</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">hotKeyEnablementChangedAction:</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="294965109"/>
+					</object>
+					<int key="connectionID">876</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">hotKeyEnablementChangedAction:</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="228564220"/>
+					</object>
+					<int key="connectionID">877</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: preferences.shouldStartTermWeaverAtLogin</string>
+						<reference key="source" ref="777554829"/>
+						<reference key="destination" ref="1021"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="777554829"/>
+							<reference key="NSDestination" ref="1021"/>
+							<string key="NSLabel">value: preferences.shouldStartTermWeaverAtLogin</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">preferences.shouldStartTermWeaverAtLogin</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">880</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -666,9 +634,9 @@
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{367, 474}, {586, 494}}</string>
+					<string>{{367, 504}, {586, 494}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{367, 474}, {586, 494}}</string>
+					<string>{{367, 504}, {586, 494}}</string>
 					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -705,7 +673,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">861</int>
+			<int key="maxID">880</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -717,8 +685,8 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>hotKeyEnablementChangedAction:</string>
 							<string>startStopTermWeaverAction:</string>
-							<string>test:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -730,20 +698,20 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>newTabHotKey</string>
-							<string>newTabHotKeyEnabled</string>
-							<string>newWindowHotKey</string>
-							<string>newWindowHotKeyEnabled</string>
-							<string>startStopTermWeaver</string>
+							<string>newTabHotKeyEnabledButton</string>
+							<string>newTabHotKeyRecorder</string>
+							<string>newWindowHotKeyEnabledButton</string>
+							<string>newWindowHotKeyRecorder</string>
+							<string>startStopTermWeaverButton</string>
 							<string>termWeaverRunningProgress</string>
-							<string>termWeaverRunningStatus</string>
+							<string>termWeaverRunningStatusText</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>SRRecorderControl</string>
 							<string>NSButton</string>
 							<string>SRRecorderControl</string>
 							<string>NSButton</string>
+							<string>SRRecorderControl</string>
 							<string>NSButton</string>
 							<string>NSProgressIndicator</string>
 							<string>NSTextField</string>

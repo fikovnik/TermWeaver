@@ -23,23 +23,28 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 
-@interface TWHotKey : NSObject {
+extern NSString *const kTWHotKeyCodePrefKey;
+extern NSString *const kTWHotKeyFlagsPrefKey;
+
+
+@interface TWHotKey : NSObject <NSCoding> {
 	@private
-	NSInteger mId;
-	NSInteger mKeyCode;
-	NSInteger mModifiers;
-	SEL mHandler;
-	id mProvider;
-	id mUserData;
+	
+	// the virtual key code for the keyboard key associated with the receiving key event.
+	// @see NSEvent keyCode
+	NSInteger keyCode;
+	
+	// using the newer Cocoa modifiers
+	// @see NSEvent for NS*KeyMask (i.e.: NSCommandKeyMask)
+	NSInteger flags;
 }
 
-@property (assign, getter=id, setter=setId) NSInteger mId;
-@property (assign, readonly, getter=keyCode) NSInteger mKeyCode;
-@property (assign, readonly, getter=modifiers) NSInteger mModifiers;
-@property (assign, readonly, getter=handler) SEL mHandler;
-@property (retain, readonly, getter=provider) id mProvider;
-@property (retain, readonly, getter=userData) id mUserData;
+@property (readonly) NSInteger keyCode;
+@property (readonly) NSInteger flags;
 
-- (id) initWithKeyCode:(NSInteger)keyCode modifiers:(NSInteger)modifiers handler:(SEL)handler provider:(id)provider userData:(id)userData;
+- (id) initWithKeyCode:(NSInteger)aKeyCode flags:(NSInteger)aFlags;
+
+- (NSString *) description;
+- (BOOL) isEqualTo:(id)object;
 
 @end

@@ -22,10 +22,81 @@
 
 #import "TWHotKeyManager.h"
 
-static NSMutableDictionary *hotKeys = nil;
-static int hotKeyIdSequence = 1;
+#import "TWDefines.h"
 
-@implementation TWHotKeyManager
+#import <ShortcutRecorder/SRCommon.h>
+
+@interface TWHotKey (Private)
+
+- (NSInteger) carbonFlags;
+
+@end
+
+@implementation TWHotKey (Private) 
+
+- (NSInteger) carbonFlags {
+	return SRCocoaToCarbonFlags([self flags]);
+}
+
+@end
+
+@interface TWHotKeyRegistartion : NSObject
+{
+	TWHotKey *hotKey;
+	SEL handler;
+	id provider;
+	id userData;
+	EventHotKeyRef ref;
+}
+
+@property (readonly) TWHotKey *hotKey;
+@property (readonly) SEL handler;
+@property (readonly) id provider;
+@property (readonly) id userData;
+@property (readonly) EventHotKeyRef ref;
+
+- (id) initWithHotKey:(TWHotKey *)aHotKey handler:(SEL)aHandler provider:(id)aProvider userData:(id)aUserData ref:(EventHotKeyRef)aRef;
+
+@end
+
+@implementation TWHotKeyRegistartion
+
+@synthesize hotKey;
+@synthesize handler;
+@synthesize provider;
+@synthesize userData;
+@synthesize ref;
+
+- (id) initWithHotKey:(TWHotKey *)aHotKey handler:(SEL)aHandler provider:(id)aProvider userData:(id)aUserData ref:(EventHotKeyRef)aRef {
+	if (![super init]) {
+		return nil;
+	}
+	
+	TWAssertNotNil(aHotKey);
+	TWAssertNotNil(aHandler);
+	TWAssertNotNil(aProvider);
+	TWAssertNotNil(aRef);
+	
+	hotKey = [aHotKey retain];
+	handler = aHandler;
+	provider = [aProvider retain];
+	userData = [aUserData retain];
+	ref = aRef;
+	
+	return self;
+}
+
+- (void) dealloc {
+	[hotKey release];
+	[provider release];
+	[userData release];
+	
+	[super dealloc];
+}
+
+@end
+
+static NSMutableDictionary *hotKeys;
 
 OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 					   void *userData)
@@ -36,55 +107,97 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	
 	NSNumber *id = [NSNumber numberWithInt:hotKeyID.id];
 	
-	TWHotKey* hotKey = [hotKeys objectForKey:id];
+	TWHotKeyRegistartion* hotKeyReg = [hotKeys objectForKey:id];
 	
-	if (hotKey != nil) {
-		objc_msgSend([hotKey provider], [hotKey handler], [hotKey userData]);
+	if (hotKeyReg != nil) {
+		objc_msgSend([hotKeyReg provider], [hotKeyReg handler], [hotKeyReg userData]);
 		return noErr;
 	} else {
 		return eventNotHandledErr;
 	}
-	
-	
 }
 
-+ (void) initialize {
+@implementation TWHotKeyManager
+
+SINGLETON_BOILERPLATE(TWHotKeyManager, sharedHotKeyManager);
+
+- (id) init {
+	if (![super init]) {
+		return nil;
+	}
+	
 	hotKeys = [[NSMutableDictionary alloc] init];
+	hotKeyIdSequence = 1;
 	
 	EventTypeSpec eventType;
 	eventType.eventClass=kEventClassKeyboard;
 	eventType.eventKind=kEventHotKeyPressed;
 	
-	InstallApplicationEventHandler(&hotKeyHandler, 1, &eventType, NULL, NULL);
+	InstallApplicationEventHandler(&hotKeyHandler, 1, &eventType, NULL, NULL);	
+	
+	return self;
+}
+
+- (void) dealloc {
+	[hotKeys release];
+	
+	[super dealloc];
 }
 
 // TODO: modify to propagate error
-+ (void) unregisterHotKey:(EventHotKeyRef)hotKey {
-	// TODO: assert
+- (void) unregisterHotKey:(TWHotKey *)hotKey {
+	TWAssertNotNil(hotKey);
 	
-	UnregisterEventHotKey(hotKey);
+	TWDevLog(@"Unregistering hotKey %@", hotKey);
+	
+	// search for the registration
+	TWHotKeyRegistartion *hotKeyReg;
+	for (TWHotKeyRegistartion *e in [hotKeys allValues]) {
+		if ([hotKey isEqualTo:[e hotKey]]) {
+			hotKeyReg = e;
+			break;
+		}
+	}
+	
+	if (hotKeyReg) {
+		UnregisterEventHotKey([hotKeyReg ref]);
+	} else {
+		// no registration found
+		TWDevLog(@"Unable to unregister hotKey: %@ - it has not been registered by this HotKeyManager", hotKey);
+	}
+
 }
 
-+ (EventHotKeyRef) registerHotKey:(TWHotKey *)hotKey {
-	// TODO: assert
+- (void) registerHotKey:(TWHotKey *)hotKey handler:(SEL)handler provider:(id)provider userData:(id)userData {
+
+	TWAssertNotNil(hotKey);
+	TWAssertNotNil(handler);
+	TWAssertNotNil(provider);
 	
-	// TODO: id should be already part of hotKey
-	int id=hotKeyIdSequence++;
+	TWDevLog(@"Registering hotKey %@", hotKey);
+
 	EventHotKeyID hotKeyID;
 	// TODO: extract
 	hotKeyID.signature='TWHT';
 	// TODO: make sure it is thread safe
-	hotKeyID.id=id;
-	[hotKey setId:id];
+	hotKeyID.id=hotKeyIdSequence++;
 	
 	EventHotKeyRef hotKeyRef;
-	
-	RegisterEventHotKey([hotKey keyCode], [hotKey modifiers], hotKeyID,
+	RegisterEventHotKey([hotKey keyCode], [hotKey carbonFlags], hotKeyID,
 						GetApplicationEventTarget(), 0, &hotKeyRef);
 	
-	[hotKeys setObject:[hotKey retain] forKey:[NSNumber numberWithInt:id]];
+	if (!hotKeyRef) {
+		NSLog(@"Unable to register hotKey: %@", hotKey);
+		return;
+	}
 	
-	return hotKeyRef;
+	// safe
+	TWHotKeyRegistartion *hotKeyReg = [[TWHotKeyRegistartion alloc] initWithHotKey:hotKey 
+																		   handler:handler 
+																		  provider:provider
+																		  userData:userData
+																			   ref:hotKeyRef];
+	[hotKeys setObject:hotKeyReg forKey:[NSNumber numberWithInt:hotKeyID.id]];	
 }
 
 @end

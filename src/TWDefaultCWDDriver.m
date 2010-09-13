@@ -24,6 +24,8 @@
 
 #import "TWAgentAppDelegate.h"
 
+#import "TWAgentConstants.h"
+#import "TWAXUtils.h"
 #import "TWDefines.h"
 
 @implementation TWDefaultCWDDriver
@@ -36,7 +38,7 @@
 												  (CFTypeRef*)&focusedWindowRef);
 	
 	if (axerror != kAXErrorSuccess) {
-		[TWAgentAppDelegate logAXError:axerror withMessage:TWStr(@"Unable to retrive focused window of application %@", appRef)];
+		TWAXLogError(axerror, TWStr(@"Unable to retrive focused window of application %@", appRef));
 	} else {
 		TWDevLog(@"Using focused window %@ of %@", focusedWindowRef, appRef);
 	}
@@ -50,7 +52,7 @@
 													  (CFTypeRef*)&pathRef);
 		
 		if (axerror != kAXErrorSuccess) {
-			[TWAgentAppDelegate logAXError:axerror withMessage:TWStr(@"Unable to retrive %@ attribute of focused window %@", e, focusedWindowRef)];
+			TWAXLogError(axerror, TWStr(@"Unable to retrive %@ attribute of focused window %@", e, focusedWindowRef));
 		} else {
 			if (CFGetTypeID(pathRef) == CFStringGetTypeID()) {
 				path = (NSString *)pathRef;				

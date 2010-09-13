@@ -21,28 +21,26 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import <Carbon/Carbon.h>
 
 #import "TWCWDDriver.h":
 
+@class TWHotKey;
+
 @interface TWAgentAppDelegate : NSObject <NSApplicationDelegate> {
-	NSDictionary *mDrivers;
-	NSObject<TWCWDDriver> *mDefaultDriver;
-	AXUIElementRef mSystemWideElement;
+	@private
+	NSDictionary *drivers;
+	NSObject<TWCWDDriver> *defaultDriver;
 	
-	// TODO: make names to be consistent mHotKeyNewWindow
-	EventHotKeyRef newTabHotKeyRef;
-	EventHotKeyRef newWindowHotKeyRef;
+	AXUIElementRef axSystemWideElement;
+	
+	TWHotKey *newTabHotKey;
+	TWHotKey *newWindowHotKey;
 }
 
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow;
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path;
+- (void) openNewTerminalInNewWindow:(BOOL)newWindow initialDirectory:(NSString *)path;
 
 - (void) preferencesChanged:(NSNotification *) notification;
 - (void) shutdown:(NSNotification *) notification;
-
-- (void) reconfigure;
-
-+ (void) logAXError:(AXError)error withMessage:(NSString *)message;
 
 @end

@@ -24,16 +24,16 @@
 
 #import "Finder.h"
 
+#import "TWAgentConstants.h"
 #import "TWDefines.h"
 
-static NSString *const FINDER_APP_ID = @"com.apple.finder"; 
 
 @implementation TWFinderAppCWDDriver
 
 
 - (NSString *) getCWDFromApplication:(AXUIElementRef)application error:(NSError **)error {
 
-	FinderApplication *finderApp = [SBApplication applicationWithBundleIdentifier:FINDER_APP_ID];
+	FinderApplication *finderApp = [SBApplication applicationWithBundleIdentifier:kFinderAppBundeId];
 	
 	if (![finderApp isRunning]) {
 		TWDevLog(@"Finder is not running");		
@@ -42,7 +42,7 @@ static NSString *const FINDER_APP_ID = @"com.apple.finder";
 	
 	FinderWindow *frontWindow = [[finderApp FinderWindows] objectAtIndex:0];
 
-	if (frontWindow == nil) {
+	if (!frontWindow) {
 		TWDevLog(@"Unable to get the front window of Finder.app");
 		return nil;
 	} else {
@@ -50,18 +50,13 @@ static NSString *const FINDER_APP_ID = @"com.apple.finder";
 	}
 		
 	FinderFinderWindow *finderFrontWindow = (FinderFinderWindow *)frontWindow;
-	
 	FinderItem *pathItem = [[finderFrontWindow target] get];
-	if (pathItem == nil) {
+	
+	if (!pathItem) {
 		TWDevLog(@"No target property set on the front window of Finder.app");
 		return nil;
 	}
 
-	if (pathItem == nil) {
-		TWDevLog(@"Path item is not valid in the front window of Finder.app");
-		return nil;		
-	}
-	
 	NSURL* pathURL = [NSURL URLWithString: [pathItem URL]];
 	TWDevLog(@"Selected path item URL: %@", pathURL);
 		

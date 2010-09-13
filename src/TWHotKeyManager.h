@@ -26,13 +26,13 @@
 #import "TWHotKey.h"
 
 @interface TWHotKeyManager : NSObject {
-
+	@private
+	NSInteger hotKeyIdSequence;
 }
 
-+ (void) initialize;
++ (TWHotKeyManager *) sharedHotKeyManager;
 
-+ (EventHotKeyRef) registerHotKey:(TWHotKey *)hotKey;
-+ (void) unregisterHotKey:(EventHotKeyRef)hotKey;
+- (void) unregisterHotKey:(TWHotKey *)hotKey;
+- (void) registerHotKey:(TWHotKey *)hotKey handler:(SEL)handler provider:(id)provider userData:(id)userData;
 	
-
 @end

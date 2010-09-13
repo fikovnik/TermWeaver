@@ -31,18 +31,28 @@
 #import "Terminal.h"
 #import "SystemEvents.h"
 
+#import "TWHotKeyPreference.h"
+#import "TWConstants.h"
+#import "TWAgentConstants.h"
+#import "TWAXUtils.h"
 #import "TWDefines.h"
 
 #import <ShortcutRecorder/SRRecorderControl.h>
 
-// TODO: externalize
-// TODO: rename
-static NSString *const TERMINAL_APP_ID = @"com.apple.Terminal"; 
-static NSString *const SYSTEMEVENTS_APP_ID = @"com.apple.systemevents";
+NSString *const kTerminalAppBundeId = @"com.apple.Terminal"; 
+NSString *const kSystemEventsAppBundleId = @"com.apple.systemevents";
+NSString *const kFinderAppBundeId = @"com.apple.finder"; 
+
+// TODO: self-aware stuff
 
 @interface TWAgentAppDelegate (Private)
 
 - (void) openNewTerminalInNewWindow_:(NSNumber *)newWindow;
+
+- (TWHotKey *) reregisterHotKey_:(TWHotKey *)hotKey fromPrefKey:(NSString *)prefKey handler:(SEL)handler userData:(id)userData;
+
+- (void) reregisterNewTabHotKey_;
+- (void) reregisterNewWindowHotKey_;
 
 @end
 
@@ -56,6 +66,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 // Introduction to Scripting Bridge Programming Guide for Cocoa
 // http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ScriptingBridgeConcepts/Introduction/Introduction.html
 
+	// TODO: which one? awakeFromNib?
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	NSLog(@"Configuring TermWeaverAgent...");
 
@@ -68,7 +79,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	}
 	
 	// get the accessibility object that provides access to system attributes.
-	mSystemWideElement = AXUIElementCreateSystemWide();
+	axSystemWideElement = AXUIElementCreateSystemWide();
 	
 	// intialize drivers
 	// use just calls
@@ -76,40 +87,46 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	[d setObject:[[TWFinderAppCWDDriver alloc] init] forKey:@"Finder"];
 	[d setObject:[[TWTerminalAppCWDDriver alloc] init] forKey:@"Terminal"];
 	
-	mDrivers = [[NSDictionary alloc] initWithDictionary:d];
+	drivers = [[NSDictionary alloc] initWithDictionary:d];
 	
 	// initialize default driver
-	mDefaultDriver = [[TWDefaultCWDDriver alloc] init];
+	defaultDriver = [[TWDefaultCWDDriver alloc] init];
 	
-	// register the key shortcut
-	
-	// TODO: store references
-	// TODO: check for errors
-
-	[self reconfigure];
+	// register hot keys
+	// TODO: if there is no settings - quit
+	[self reregisterNewWindowHotKey_];
+	[self reregisterNewTabHotKey_];
 	
 	// TODO: gracefull shtudown - UnregisterEventHotKey
 	
-	NSDistributedNotificationCenter *notificationCenter = [NSDistributedNotificationCenter defaultCenter];
+	// register notifications
+	NSNotificationCenter *notificationCenter = [NSDistributedNotificationCenter defaultCenter];
 	
 	[notificationCenter addObserver:self
 			  selector:@selector(preferencesChanged:)
-				  name:kTermWeaverPreferencesChanged
+				  name:kTWPreferencesChangedNotification
 				object:nil];
+	
 	[notificationCenter addObserver:self
 			  selector:@selector(shutdown:)
-				  name:kTermWeaverShutdownRequest
-				object:nil];	
+				  name:kTWAgentShutdownRequestNotification
+				object:nil];
+	
+	[notificationCenter postNotificationName:kTWAgentLaunchedNotification object:nil];
 }
 
 - (void) dealloc {
-	[mDrivers release];
-	[mDefaultDriver release];
+	[drivers release];
+	[defaultDriver release];
+	
+	[newTabHotKey release];
+	[newWindowHotKey release];
 	
 	[super dealloc];
 }
 
 - (void) openNewTerminalInNewWindow_:(NSNumber *)newWindow {
+	// as a task
 	[self openNewTerminalInNewWindow:[newWindow boolValue]];
 }
 
@@ -119,16 +136,16 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	AXUIElementRef focusedAppRef = nil;	
     
 	// get the focused application
-	AXError axerror = AXUIElementCopyAttributeValue(mSystemWideElement,
+	AXError axerror = AXUIElementCopyAttributeValue(axSystemWideElement,
 												  (CFStringRef)kAXFocusedApplicationAttribute,
 												  (CFTypeRef*)&focusedAppRef);
 	
 	if (axerror != kAXErrorSuccess) {
 		// problem
-		[TWAgentAppDelegate logAXError:axerror withMessage:@"Unable to get focused application"];			
+		TWAXLogError(axerror, @"Unable to get focused application");			
 		
 		// open terminal in home directory
-		[self openNewTerminalInNewWindow:newWindow withInitialDirectory:NSHomeDirectory()];
+		[self openNewTerminalInNewWindow:newWindow initialDirectory:NSHomeDirectory()];
 		return;
 	}
 	
@@ -145,7 +162,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	
 	if (axerror != kAXErrorSuccess) {
 		// cannot deterimine the name of the application
-		[TWAgentAppDelegate logAXError:axerror withMessage:TWStr(@"Unable to determine the title of the focused app %@", focusedAppRef)];
+		TWAXLogError(axerror, TWStr(@"Unable to determine the title of the focused app %@", focusedAppRef));
 	} else {
 		TWAssert(appNameRef != nil, @"Application name reference must not be nil.");
 
@@ -160,12 +177,12 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 		TWDevLog(@"Focused application %@ is %@ - looking for driver", focusedAppRef, appName);
 		
 		// find the corresponding driver
-		driver = [mDrivers objectForKey:appName];
+		driver = [drivers objectForKey:appName];
 	}
 		
 	if (driver == nil) {
 		TWDevLog(@"No driver found so far - using default");
-		driver = mDefaultDriver;
+		driver = defaultDriver;
 	}
 
 
@@ -178,13 +195,13 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 		path = NSHomeDirectory();
 	}
 	
-	[self openNewTerminalInNewWindow:newWindow withInitialDirectory:path];
+	[self openNewTerminalInNewWindow:newWindow initialDirectory:path];
 }
 
-- (void) openNewTerminalInNewWindow:(BOOL)newWindow withInitialDirectory:(NSString *)path {
+- (void) openNewTerminalInNewWindow:(BOOL)newWindow initialDirectory:(NSString *)path {
 	NSLog(@"Opening terminal with path: %@ %d", path, newWindow);
 	
-	TerminalApplication *terminalApp = [SBApplication applicationWithBundleIdentifier:TERMINAL_APP_ID];
+	TerminalApplication *terminalApp = [SBApplication applicationWithBundleIdentifier:kTerminalAppBundeId];
 	
 	if (terminalApp == nil) {
 		// TODO: handle this
@@ -192,7 +209,7 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 	
 	[terminalApp activate];
 				
-	SystemEventsApplication *systemEventsApp = [SBApplication applicationWithBundleIdentifier:SYSTEMEVENTS_APP_ID];
+	SystemEventsApplication *systemEventsApp = [SBApplication applicationWithBundleIdentifier:kSystemEventsAppBundleId];
 	
 	if (systemEventsApp == nil) {
 		// TODO: handle this
@@ -236,98 +253,86 @@ OSStatus hotKeyHandler(EventHandlerCallRef inHandlerCallRef,EventRef inEvent,
 }
 
 - (void) preferencesChanged:(NSNotification *) notification {
-#pragma unused(notification)
 	NSLog(@"Received preferences changed natification - reconfiguring...");
 
-	[self reconfigure];
+	NSDictionary *userInfo = [notification userInfo];
+	
+	NSLog(@"%@", userInfo);
 }
 
-- (void) shutdown:(NSNotification *) notification {
-#pragma unused(notification)
+- (void) shutdown:(NSNotification *) __unused notification {
 	NSLog(@"Received shutdown notification - terminating...");
 	
 	[NSApp terminate:nil];
 }
 
-- (void) reconfigure {
-	NSLog(@"Reconfiguring...");
+- (void)applicationWillTerminate:(NSNotification *) notification {
 	
-	TWPreferencesController *preferences = [TWPreferencesController sharedPreferences];
-	
-	BOOL enabled = [preferences boolForKey:kHotKeyNewTerminalWindowEnabled];
-	NSInteger code = [[preferences numberForKey:kHotKeyNewTerminalWindowCode] integerValue];
-	NSInteger flags = [[preferences numberForKey:kHotKeyNewTerminalWindowFlags] integerValue];
-	
-	flags = SRCocoaToCarbonFlags(flags);
-	
-	if (newWindowHotKeyRef) {
-		[TWHotKeyManager unregisterHotKey:newWindowHotKeyRef];
-	}
-	
-	if (enabled) {
-		if (code && flags) {
-			NSLog(@"%d %d", flags, controlKey+optionKey);
-			TWHotKey *hotKey = [[TWHotKey alloc] initWithKeyCode:code modifiers:flags handler:@selector(openNewTerminalInNewWindow_:) provider:self userData:[NSNumber numberWithBool:YES]];
-			newWindowHotKeyRef = [TWHotKeyManager registerHotKey:hotKey];		
-		} else {
-			// TODO: handle
-		}
-	} else {
-		TWDevLog(@"New window hot key is no longer enabled");
-	}
-
-	enabled = [preferences boolForKey:kHotKeyNewTerminalTabEnabled];
-	code = [[preferences numberForKey:kHotKeyNewTerminalTabCode] integerValue];
-	flags = [[preferences numberForKey:kHotKeyNewTerminalTabFlags] integerValue];
-
-	flags = SRCocoaToCarbonFlags(flags);
-	
-	if (newTabHotKeyRef) {
-		[TWHotKeyManager unregisterHotKey:newTabHotKeyRef];
-	}
-	
-	if (enabled) {
-		if (code && flags) {
-			TWHotKey *hotKey = [[TWHotKey alloc] initWithKeyCode:code modifiers:flags handler:@selector(openNewTerminalInNewWindow_:) provider:self userData:[NSNumber numberWithBool:NO]];
-			newTabHotKeyRef = [TWHotKeyManager registerHotKey:hotKey];		
-		} else {
-			// TODO: handle
-		}
-	} else {
-		TWDevLog(@"New tab hot key is no longer enabled");
-	}
+	[[NSDistributedNotificationCenter defaultCenter] postNotificationName:kTWAgentTerminatedNotification object:nil];
 }
 
+- (void) reregisterNewWindowHotKey_ {
+	newWindowHotKey = [self reregisterHotKey_:newWindowHotKey 
+				fromPrefKey:kTWNewWindowHotKeyKey 
+					handler:@selector(openNewTerminalInNewWindow_:) 
+				   userData:[NSNumber numberWithBool:YES]];	
+}
 
-// TODO: move to AXUtils
-+ (void) logAXError:(AXError)error withMessage:(NSString *)message {
-	NSString *detail = nil;
+- (void) reregisterNewTabHotKey_ {
+	newTabHotKey = [self reregisterHotKey_:newTabHotKey 
+				fromPrefKey:kTWNewTabHotKeyKey 
+					handler:@selector(openNewTerminalInNewWindow_:) 
+				   userData:[NSNumber numberWithBool:NO]];	
+}
+
+- (TWHotKey *) reregisterHotKey_:(TWHotKey *)hotKey fromPrefKey:(NSString *)prefKey handler:(SEL)handler userData:(id)userData {
+
+	TWAssertNotNil(prefKey);
+	TWAssertNotNil(handler);
+	TWAssertNotNil(userData);
+
+	TWDevLog(@"Reregistering hotKey %@ from prefKey: %@", hotKey, prefKey);
 	
-	switch (error) {
-		case kAXErrorNoValue:
-			detail = @"The requested value or AXUIElementRef does not exist.";
-			break;
-		case kAXErrorAttributeUnsupported:
-			detail = @"The specified AXUIElementRef does not support the specified attribute.";
-			break;
-		case kAXErrorIllegalArgument:
-			detail = @"One or more of the arguments is an illegal value.";
-			break;
-		case kAXErrorInvalidUIElement:
-			detail = @"The AXUIElementRef is invalid.";
-			break;
-		case kAXErrorCannotComplete:
-			detail = @"The function cannot complete because messaging has failed in some way.";
-			break;
-		case kAXErrorNotImplemented:
-			detail = @"The process does not fully support the accessibility API.";
-			break;
-		default:
-			detail = TWStr(@"Unexpected type of problem with AX: %d", error);
-			break;
+	TWPreferencesController *preferences = [TWPreferencesController sharedPreferences];
+	TWHotKeyManager *hotKeyManager = [TWHotKeyManager sharedHotKeyManager];
+
+	// reload preferences
+	[preferences synchronize];
+
+	TWHotKeyPreference *pref = [preferences objectForKey:prefKey];
+	
+	if (!pref) {
+		TWDevLog(@"No preferences for hotKey: %@", prefKey);
+		return nil;
 	}
 	
-	TWDevLog(@"AX problem - %@ (%@)", message, detail);
+	TWHotKey *newHotKey = [pref hotKey];
+	BOOL enabled = [pref enabled];
+	
+	if (enabled && [newHotKey isEqualTo:hotKey]) {
+		TWDevLog(@"Keys appear to be the same for prefKey: %@", prefKey);
+		return hotKey;
+	}
+	
+	if (hotKey) {
+		// unregister first
+		TWDevLog(@"Unregistering hotKey: %@ (%@)", prefKey, hotKey);
+		[hotKeyManager unregisterHotKey:hotKey];
+		[hotKey release];
+	}
+
+	if (!enabled) {
+		TWDevLog(@"HotKey %@ (%@) is not enabled", prefKey, newHotKey);
+		return nil;
+	}
+	
+	NSLog(@"Registering hotKey: %@ (%@)", prefKey, newHotKey);
+	[hotKeyManager registerHotKey:newHotKey 
+						  handler:@selector(openNewTerminalInNewWindow_:) 
+						 provider:self 
+						 userData:userData];
+	
+	return newHotKey;
 }
 
 @end
