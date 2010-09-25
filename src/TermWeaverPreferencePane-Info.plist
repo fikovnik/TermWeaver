@@ -26,5 +26,7 @@
 	<string>TermWeaverPreferencePane.png</string>
 	<key>NSPrefPaneIconLabel</key>
 	<string>TermWeaver</string>
+	<key>CFBundleName</key>
+	<string>TermWeaver</string>
 </dict>
 </plist>
