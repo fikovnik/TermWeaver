@@ -26,10 +26,9 @@
 
 extern NSString *const kTWNewWindowHotKeyKey;
 extern NSString *const kTWNewTabHotKeyKey;
+extern NSString *const kTWVersionKey;
 
 @interface TWPreferencesController : TWAbstractPreferencesController
-
-@property(assign) BOOL shouldStartTermWeaverAtLogin;
 
 + (TWPreferencesController *) sharedPreferences;
 

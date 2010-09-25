@@ -36,10 +36,14 @@
 SINGLETON_BOILERPLATE(TWLoginItems, sharedLoginItems);
 
 - (BOOL) isInLoginItemsApplicationWithPath:(NSString *)path {
+	TWAssertNotNil(path);
+
 	return [self getApplicationLoginItemWithPath_:path] != nil;	
 }
 
 - (void) toggleApplicationInLoginItemsWithPath:(NSString *)path enabled:(BOOL)enabled {
+	TWAssertNotNil(path);
+	
 	OSStatus status;
 	LSSharedFileListItemRef existingItem = [self getApplicationLoginItemWithPath_:path];
 	CFURLRef URLToApp = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)path, kCFURLPOSIXPathStyle, true);
@@ -67,7 +71,11 @@ SINGLETON_BOILERPLATE(TWLoginItems, sharedLoginItems);
 	}	
 }
 
+#pragma mark Private methods
+
 - (LSSharedFileListItemRef) getApplicationLoginItemWithPath_:(NSString *)path {
+	TWAssertNotNil(path);
+
 	CFURLRef URLToApp = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)path, kCFURLPOSIXPathStyle, true);
 	
 	LSSharedFileListItemRef existingItem = NULL;

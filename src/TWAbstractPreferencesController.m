@@ -22,22 +22,32 @@
 
 #import "TWAbstractPreferencesController.h"
 
-#import "TWHotKey+SRKeyCombo.h"
-#import "TWConstants.h"
 #import "TWDefines.h"
 
-// TODO: extract
-NSString *const kTWNewWindowHotKeyKey = @"newWindowHotKey";
-NSString *const kTWNewTabHotKeyKey = @"newTabHotKey";
+NSString *const kTWPreferencesChangedNotification = @"net.nkuyu.apps.termweaver.notifications.preferencesChanged";
 
-
-// TODO: extract some methods to some utility class
 @implementation TWAbstractPreferencesController
+
+- (id) initWithBundleId:(NSString *)aBundleId {
+	if (![super init]) {
+		return nil;
+	}
+	
+	bundleId = [aBundleId retain];
+	
+	return self;
+}
+
+- (void) dealloc {
+	[bundleId release];
+	
+	[super dealloc];
+}
 
 - (id) objectForKey:(NSString *)key {
 	TWAssertNotNil(key);
 
-	id value = (id)CFPreferencesCopyAppValue((CFStringRef)key, (CFStringRef)kTWAgentAppBundleId);
+	id value = (id)CFPreferencesCopyAppValue((CFStringRef)key, (CFStringRef)bundleId);
 	CFMakeCollectable(value);
 
 	id value_ = nil;
@@ -77,7 +87,7 @@ NSString *const kTWNewTabHotKeyKey = @"newTabHotKey";
 
 	CFPreferencesSetAppValue((CFStringRef)key,
 							 (CFPropertyListRef)value_,
-							 (CFStringRef)kTWAgentAppBundleId);
+							 (CFStringRef)bundleId);
 	
 	[self synchronize];
 	
@@ -118,26 +128,26 @@ NSString *const kTWNewTabHotKeyKey = @"newTabHotKey";
 	TWDevLog(@"registering defaults: %@", defaults);
 	
 	NSUserDefaults *agentAppDefaults = [NSUserDefaults standardUserDefaults];
-	[agentAppDefaults addSuiteNamed:kTWAgentAppBundleId];
+	[agentAppDefaults addSuiteNamed:bundleId];
 	
-	NSDictionary *existing = [agentAppDefaults persistentDomainForName:kTWAgentAppBundleId];
+	NSDictionary *existing = [agentAppDefaults persistentDomainForName:bundleId];
 	
 	if (existing) {
 		NSMutableDictionary *domain = [defaults mutableCopy];
 		
 		[domain addEntriesFromDictionary:existing];
-		[agentAppDefaults setPersistentDomain:domain forName:kTWAgentAppBundleId];
+		[agentAppDefaults setPersistentDomain:domain forName:bundleId];
 		[domain release];
 	} else {
-		[agentAppDefaults setPersistentDomain:defaults forName:kTWAgentAppBundleId];
+		[agentAppDefaults setPersistentDomain:defaults forName:bundleId];
 	}
 		
 	[self synchronize];
 }
 
 - (void) synchronize {	
-	if(!CFPreferencesAppSynchronize((CFStringRef)kTWAgentAppBundleId)) {
-		NSLog(@"Unable to sync preferences %@", kTWAgentAppBundleId);
+	if(!CFPreferencesAppSynchronize((CFStringRef)bundleId)) {
+		NSLog(@"Unable to sync preferences %@", bundleId);
 		// TODO: handle
 	}
 }

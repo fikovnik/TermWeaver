@@ -22,10 +22,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString *const kTWPreferencesChangedNotification;
+
 // TODO: KVO compliant?
 @interface TWAbstractPreferencesController : NSObject {
-
+	@private
+	NSString *bundleId;
 }
+
+- (id) initWithBundleId:(NSString *)bundleId;
 
 - (void) registerDefaults:(NSDictionary *)defaults;
 - (void) synchronize;

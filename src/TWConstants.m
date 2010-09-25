@@ -25,7 +25,6 @@
 NSString *const kTWPreferencesPaneBundleId = @"net.nkuyu.apps.termweaver";
 NSString *const kTWAgentAppBundleId = @"net.nkuyu.apps.termweaver.agent";
 
-NSString *const kTWPreferencesChangedNotification = @"net.nkuyu.apps.termweaver.notifications.preferencesChanged";
 NSString *const kTWAgentShutdownRequestNotification = @"net.nkuyu.apps.termweaver.notifications.agentShutdownRequest";
 NSString *const kTWAgentLaunchedNotification = @"net.nkuyu.apps.termweaver.notifications.agentLaunched";
 NSString *const kTWAgentTerminatedNotification = @"net.nkuyu.apps.termweaver.notifications.agentTerminated";
@@ -33,3 +32,12 @@ NSString *const kTWAgentTerminatedNotification = @"net.nkuyu.apps.termweaver.not
 NSString *const kTWAgenAppName = @"TermWeaverAgent";
 
 NSString *const kTWErrorDomain = @"net.nkuyu.apps.termweaver.ErrorDomain";
+
+NSString *const kTWVersion = @"1.0";
+
+NSString *const kTWHomePageURL = @"http://github.com/fikovnik/TermWeaver";
+
+NSInteger const kTWDefaultNewWindowHotKeyCode = 42;
+NSInteger const kTWDefaultNewWindowHotKeyFlags = NSCommandKeyMask | NSAlternateKeyMask;
+NSInteger const kTWDefaultNewTabHotKeyCode = 42;
+NSInteger const kTWDefaultNewTabHotKeyFlags = NSCommandKeyMask | NSAlternateKeyMask | NSShiftKeyMask;

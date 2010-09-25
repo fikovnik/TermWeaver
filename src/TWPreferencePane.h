@@ -35,11 +35,12 @@
 	IBOutlet NSButton *startStopTermWeaverButton;
 	IBOutlet NSTextField *termWeaverRunningStatusText;
 	IBOutlet NSProgressIndicator *termWeaverRunningProgress;
-
+	IBOutlet NSButton *shouldStartAtLoginButton;
 	IBOutlet NSButton *newWindowHotKeyEnabledButton;
 	IBOutlet NSButton *newTabHotKeyEnabledButton;
 	IBOutlet SRRecorderControl *newWindowHotKeyRecorder;
 	IBOutlet SRRecorderControl *newTabHotKeyRecorder;
+	IBOutlet NSTextField *aboutTermWeaverText;
 }
 
 @property(readonly) TWPreferencesController *preferences;
@@ -60,5 +61,6 @@
 
 - (IBAction) startStopTermWeaverAction:(id)sender;
 - (IBAction) hotKeyEnablementChangedAction:(id)sender;
+- (IBAction) shouldStartAtLoginAction:(id)sender;
 
 @end

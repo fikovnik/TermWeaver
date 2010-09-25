@@ -180,7 +180,7 @@
 						<object class="NSButton" id="777554829">
 							<reference key="NSNextResponder" ref="725765206"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{87, 418}, {192, 18}}</string>
+							<string key="NSFrame">{{87, 412}, {192, 18}}</string>
 							<reference key="NSSuperview" ref="725765206"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="121801650">
@@ -276,9 +276,9 @@
 							<reference key="NSSuperview" ref="725765206"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="852446593">
-								<int key="NSCellFlags">67239424</int>
-								<int key="NSCellFlags2">272760832</int>
-								<string key="NSContents">If the TeamWeaver is running, unpon pressing a shortcut, it will open a new terminal window (or tab) and cd of the current directory of the application that had a focus at tme of pressing the hot key. It is not always possible to determine what is the current directory of an application moreover sometimes an application does...</string>
+								<int key="NSCellFlags">69336577</int>
+								<int key="NSCellFlags2">1279393792</int>
+								<string key="NSContents">If the TermWeaver is running then you might experience a problem when typing the same shortcut into the shortcut recorder. If you want to revert to an existing shortcut press the arrow button.</string>
 								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="1012959661"/>
 								<reference key="NSBackgroundColor" ref="220983626"/>
@@ -409,20 +409,28 @@
 					<int key="connectionID">877</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: preferences.shouldStartTermWeaverAtLogin</string>
-						<reference key="source" ref="777554829"/>
-						<reference key="destination" ref="1021"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="777554829"/>
-							<reference key="NSDestination" ref="1021"/>
-							<string key="NSLabel">value: preferences.shouldStartTermWeaverAtLogin</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">preferences.shouldStartTermWeaverAtLogin</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
+					<object class="IBActionConnection" key="connection">
+						<string key="label">shouldStartAtLoginAction:</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="777554829"/>
 					</object>
-					<int key="connectionID">880</int>
+					<int key="connectionID">891</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">shouldStartAtLoginButton</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="777554829"/>
+					</object>
+					<int key="connectionID">892</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">aboutTermWeaverText</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="1012959661"/>
+					</object>
+					<int key="connectionID">894</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -634,9 +642,9 @@
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{367, 504}, {586, 494}}</string>
+					<string>{{343, 229}, {586, 494}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{367, 504}, {586, 494}}</string>
+					<string>{{343, 229}, {586, 494}}</string>
 					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -673,7 +681,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">880</int>
+			<int key="maxID">894</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -686,10 +694,12 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>hotKeyEnablementChangedAction:</string>
+							<string>shouldStartAtLoginAction:</string>
 							<string>startStopTermWeaverAction:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -698,20 +708,24 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>aboutTermWeaverText</string>
 							<string>newTabHotKeyEnabledButton</string>
 							<string>newTabHotKeyRecorder</string>
 							<string>newWindowHotKeyEnabledButton</string>
 							<string>newWindowHotKeyRecorder</string>
+							<string>shouldStartAtLoginButton</string>
 							<string>startStopTermWeaverButton</string>
 							<string>termWeaverRunningProgress</string>
 							<string>termWeaverRunningStatusText</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSTextField</string>
 							<string>NSButton</string>
 							<string>SRRecorderControl</string>
 							<string>NSButton</string>
 							<string>SRRecorderControl</string>
+							<string>NSButton</string>
 							<string>NSButton</string>
 							<string>NSProgressIndicator</string>
 							<string>NSTextField</string>

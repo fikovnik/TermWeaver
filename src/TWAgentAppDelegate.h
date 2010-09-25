@@ -30,17 +30,20 @@
 	@private
 	NSDictionary *drivers;
 	NSObject<TWCWDDriver> *defaultDriver;
-	
+	NSOperationQueue *operationQueue;
+		
 	AXUIElementRef axSystemWideElement;
 	
 	TWHotKey *newTabHotKey;
 	TWHotKey *newWindowHotKey;
+	
+	IBOutlet NSTextField *moreInformationURL;
 }
 
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow;
 - (void) openNewTerminalInNewWindow:(BOOL)newWindow initialDirectory:(NSString *)path;
 
-- (void) preferencesChanged:(NSNotification *) notification;
-- (void) shutdown:(NSNotification *) notification;
+- (void) preferencesChanged:(NSNotification *)notification;
+- (void) shutdown:(NSNotification *)notification;
 
 @end

@@ -25,3 +25,9 @@
 NSString *GetBundleResourcePath(NSBundle *bundle, NSString *resourceName, NSString *resourceType);
 
 NSURL *GetBundleResourceURL(NSBundle *bundle, NSString *resourceName, NSString *resourceType);
+
+BOOL OpenSystemPreferencePane(NSString *prefPaneId);
+
+BOOL IsProcessWithBundleIdRunning(NSString *bundleId);
+
+NSInteger NumberOfRunningProcessesWithBundleId(NSString *bundleId);

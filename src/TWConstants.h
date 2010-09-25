@@ -20,14 +20,29 @@
  THE SOFTWARE.
  */
 
+// bundle ids
 extern NSString *const kTWPreferencesPaneBundleId;
 extern NSString *const kTWAgentAppBundleId;
 
+// notifications
 extern NSString *const kTWAgentShutdownRequestNotification;
-extern NSString *const kTWPreferencesChangedNotification;
 extern NSString *const kTWAgentLaunchedNotification;
 extern NSString *const kTWAgentTerminatedNotification;
 
+// agent application name
 extern NSString *const kTWAgenAppName;
 
+// error domain for the NSError class
 extern NSString *const kTWErrorDomain;
+
+// version for the preferences
+extern NSString *const kTWVersion;
+
+// URL of the application
+extern NSString *const kTWHomePageURL;
+
+// default keys
+extern NSInteger const kTWDefaultNewWindowHotKeyCode;
+extern NSInteger const kTWDefaultNewWindowHotKeyFlags;
+extern NSInteger const kTWDefaultNewTabHotKeyCode;
+extern NSInteger const kTWDefaultNewTabHotKeyFlags;

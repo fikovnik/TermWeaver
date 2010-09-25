@@ -13,7 +13,6 @@
 		27049E3A1225556C00BE2140 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049E391225556C00BE2140 /* Cocoa.framework */; };
 		27049E3D1225557500BE2140 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F1513712248209000E6B4E /* Carbon.framework */; };
 		27049E4C1225573400BE2140 /* TWPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049E4B1225573400BE2140 /* TWPreferencePane.m */; };
-		27049E501225576B00BE2140 /* TermWeaverPreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */; };
 		27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */; };
 		27049F8D1225657700BE2140 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27049F9D1225669800BE2140 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
@@ -24,7 +23,11 @@
 		2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */; };
 		276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */; };
 		2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761343B12217D9E00367AAB /* ScriptingBridge.framework */; };
+		27742379124C0F1500C02470 /* TermWeaver.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27742378124C0F1500C02470 /* TermWeaver.icns */; };
+		2774237A124C0F1500C02470 /* TermWeaver.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27742378124C0F1500C02470 /* TermWeaver.icns */; };
+		2774237C124C0F5B00C02470 /* TermWeaverPreferencePane.png in Resources */ = {isa = PBXBuildFile; fileRef = 2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */; };
 		278FC55A12241F4200F1F0AD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 278FC55912241F4200F1F0AD /* RegexKitLite.m */; };
+		27983CC2124E76DA0000DE14 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 27983CC1124E76DA0000DE14 /* About.html */; };
 		27DB4E101226E8BA009FF1C7 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27DB4E2B1226E919009FF1C7 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27049F8C1225657700BE2140 /* ShortcutRecorder.framework */; };
 		27DB4FB712270A3E009FF1C7 /* TWAXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */; };
@@ -96,7 +99,6 @@
 		27049E4A1225573400BE2140 /* TWPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPreferencePane.h; sourceTree = "<group>"; };
 		27049E4B1225573400BE2140 /* TWPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPreferencePane.m; sourceTree = "<group>"; };
 		27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TermWeaverPreferencePane-Info.plist"; sourceTree = "<group>"; };
-		27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TermWeaverPreferencePane.tiff; sourceTree = "<group>"; };
 		27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermWeaverPreferencePane.xib; sourceTree = "<group>"; };
 		27049F7B1225633700BE2140 /* TeamWeaverPreferencePane_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamWeaverPreferencePane_Prefix.pch; sourceTree = "<group>"; };
 		27049F8C1225657700BE2140 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShortcutRecorder.framework; path = "/Users/krikava/Development/objc/shortcutrecorder-read-only/build/Release/ShortcutRecorder.framework"; sourceTree = "<absolute>"; };
@@ -113,8 +115,11 @@
 		2761329612215F4100367AAB /* TWDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDefines.h; sourceTree = "<group>"; };
 		276133E7122177B400367AAB /* Finder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
 		2761343B12217D9E00367AAB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
+		27742378124C0F1500C02470 /* TermWeaver.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TermWeaver.icns; path = ../artwork/TermWeaver.icns; sourceTree = SOURCE_ROOT; };
+		2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TermWeaverPreferencePane.png; path = ../artwork/TermWeaverPreferencePane.png; sourceTree = SOURCE_ROOT; };
 		278FC55812241F4200F1F0AD /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = external/RegexKitLite/RegexKitLite.h; sourceTree = "<group>"; };
 		278FC55912241F4200F1F0AD /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = external/RegexKitLite/RegexKitLite.m; sourceTree = "<group>"; };
+		27983CC1124E76DA0000DE14 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		27DB4FB512270A3E009FF1C7 /* TWAXUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAXUtils.h; sourceTree = "<group>"; };
 		27DB4FB612270A3E009FF1C7 /* TWAXUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAXUtils.m; sourceTree = "<group>"; };
 		27DB4FC612270BA0009FF1C7 /* TWAgentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAgentConstants.h; sourceTree = "<group>"; };
@@ -239,6 +244,7 @@
 		27049E351225546B00BE2140 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				27742378124C0F1500C02470 /* TermWeaver.icns */,
 				8D1107310486CEB800E47090 /* TermWeaver-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -266,6 +272,7 @@
 		27049FB2122567EA00BE2140 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				27742377124C0F0000C02470 /* Resources */,
 				27049FD512256EF800BE2140 /* Classes */,
 			);
 			name = Common;
@@ -303,6 +310,13 @@
 				276133E7122177B400367AAB /* Finder.h */,
 			);
 			name = "Scripting Bridge";
+			sourceTree = "<group>";
+		};
+		27742377124C0F0000C02470 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		27E34B2312218A5800E66481 /* Drivers */ = {
@@ -362,9 +376,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */,
 				27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */,
-				27049E4E1225576B00BE2140 /* TermWeaverPreferencePane.tiff */,
 				27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */,
+				27983CC1124E76DA0000DE14 /* About.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -443,8 +458,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */,
-				27049E501225576B00BE2140 /* TermWeaverPreferencePane.tiff in Resources */,
 				27049E6D1225593300BE2140 /* TermWeaverPreferencePane.xib in Resources */,
+				2774237A124C0F1500C02470 /* TermWeaver.icns in Resources */,
+				2774237C124C0F5B00C02470 /* TermWeaverPreferencePane.png in Resources */,
+				27983CC2124E76DA0000DE14 /* About.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +471,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				27742379124C0F1500C02470 /* TermWeaver.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

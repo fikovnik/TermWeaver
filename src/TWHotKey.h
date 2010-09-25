@@ -23,19 +23,31 @@
 #import <Cocoa/Cocoa.h>
 #import <Carbon/Carbon.h>
 
+/**
+ * Preference key for key code attribute
+ */
 extern NSString *const kTWHotKeyCodePrefKey;
-extern NSString *const kTWHotKeyFlagsPrefKey;
 
+/**
+ * Preference key for key flags attribute
+ */
+extern NSString *const kTWHotKeyFlagsPrefKey;
 
 @interface TWHotKey : NSObject <NSCoding> {
 	@private
 	
-	// the virtual key code for the keyboard key associated with the receiving key event.
-	// @see NSEvent keyCode
+	/**
+	 * The virtual key code for the keyboard key associated with the receiving key event.
+	 * 
+	 * @see NSEvent keyCode
+	 */
 	NSInteger keyCode;
 	
-	// using the newer Cocoa modifiers
-	// @see NSEvent for NS*KeyMask (i.e.: NSCommandKeyMask)
+	/** 
+	 * Using the newer Cocoa modifiers
+	 * 
+	 * @see NSEvent for NS*KeyMask (i.e.: NSCommandKeyMask)
+	 */
 	NSInteger flags;
 }
 

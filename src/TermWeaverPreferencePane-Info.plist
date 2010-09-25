@@ -23,7 +23,7 @@
 	<key>NSPrincipalClass</key>
 	<string>TWPreferencePane</string>
 	<key>NSPrefPaneIconFile</key>
-	<string>TermWeaverPreferencePane.tiff</string>
+	<string>TermWeaverPreferencePane.png</string>
 	<key>NSPrefPaneIconLabel</key>
 	<string>TermWeaver</string>
 </dict>

@@ -7,9 +7,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>TermWeaver.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.nkuyu.app.termweaver.agent</string>
+	<string>net.nkuyu.apps.termweaver.agent</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
