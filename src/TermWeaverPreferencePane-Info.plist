@@ -12,12 +12,10 @@
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
-	<key>CFBundleShortVersionString</key>
+	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
 	<key>NSMainNibFile</key>
 	<string>TermWeaverPreferencePane</string>
 	<key>NSPrincipalClass</key>
@@ -28,5 +26,9 @@
 	<string>TermWeaver</string>
 	<key>CFBundleName</key>
 	<string>TermWeaver</string>
+	<key>SUFeedURL</key>
+	<string>http://nkuyu.net/apps/termweaver/appcast.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>

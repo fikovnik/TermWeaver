@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		276516CF124E946100797DCE /* Distribution */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 276516D9124E946E00797DCE /* Build configuration list for PBXAggregateTarget "Distribution" */;
+			buildPhases = (
+				276516D3124E946B00797DCE /* ShellScript */,
+			);
+			dependencies = (
+				276516DE124E94D000797DCE /* PBXTargetDependency */,
+			);
+			name = Distribution;
+			productName = Distribution;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* TWAgentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TWAgentAppDelegate.m */; };
@@ -19,10 +34,14 @@
 		27049FD812256F1B00BE2140 /* TWAbstractPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */; };
 		2704A0251225748200BE2140 /* TermWeaverAgent.app in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* TermWeaverAgent.app */; };
 		2704A0C812259A0D00BE2140 /* TWAbstractPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */; };
+		27443AE81251396300313085 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 27443AE71251396200313085 /* dsa_pub.pem */; };
 		276132231221519900367AAB /* TWFinderAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132221221519900367AAB /* TWFinderAppCWDDriver.m */; };
 		2761322F122153EB00367AAB /* TWTerminalAppCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2761322E122153EB00367AAB /* TWTerminalAppCWDDriver.m */; };
 		276132321221543000367AAB /* TWDefaultCWDDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 276132311221543000367AAB /* TWDefaultCWDDriver.m */; };
 		2761343C12217D9E00367AAB /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761343B12217D9E00367AAB /* ScriptingBridge.framework */; };
+		276516B1124E8B4100797DCE /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276516B0124E8B4100797DCE /* Sparkle.framework */; };
+		276516C9124E8B8C00797DCE /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276516B0124E8B4100797DCE /* Sparkle.framework */; };
+		276516CE124E8D9C00797DCE /* TWSUUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 276516CD124E8D9C00797DCE /* TWSUUpdater.m */; };
 		27742379124C0F1500C02470 /* TermWeaver.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27742378124C0F1500C02470 /* TermWeaver.icns */; };
 		2774237A124C0F1500C02470 /* TermWeaver.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27742378124C0F1500C02470 /* TermWeaver.icns */; };
 		2774237C124C0F5B00C02470 /* TermWeaverPreferencePane.png in Resources */ = {isa = PBXBuildFile; fileRef = 2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */; };
@@ -60,6 +79,13 @@
 			remoteGlobalIDString = 8D1107260486CEB800E47090;
 			remoteInfo = TermWeaverHelperApp;
 		};
+		276516DD124E94D000797DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27049E26122553FA00BE2140;
+			remoteInfo = TermWeaver;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				276516B1124E8B4100797DCE /* Sparkle.framework in CopyFiles */,
 				27049F9D1225669800BE2140 /* ShortcutRecorder.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +132,7 @@
 		27049FD612256F1B00BE2140 /* TWAbstractPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAbstractPreferencesController.h; sourceTree = "<group>"; };
 		27049FD712256F1B00BE2140 /* TWAbstractPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAbstractPreferencesController.m; sourceTree = "<group>"; };
 		272A5539122316B000341171 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		27443AE71251396200313085 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		276132201221510400367AAB /* TWCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCWDDriver.h; sourceTree = "<group>"; };
 		276132211221519900367AAB /* TWFinderAppCWDDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFinderAppCWDDriver.h; sourceTree = "<group>"; };
 		276132221221519900367AAB /* TWFinderAppCWDDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFinderAppCWDDriver.m; sourceTree = "<group>"; };
@@ -115,6 +143,9 @@
 		2761329612215F4100367AAB /* TWDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDefines.h; sourceTree = "<group>"; };
 		276133E7122177B400367AAB /* Finder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
 		2761343B12217D9E00367AAB /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = /System/Library/Frameworks/ScriptingBridge.framework; sourceTree = "<absolute>"; };
+		276516B0124E8B4100797DCE /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = external/Sparkle.framework; sourceTree = "<group>"; };
+		276516CC124E8D9C00797DCE /* TWSUUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSUUpdater.h; sourceTree = "<group>"; };
+		276516CD124E8D9C00797DCE /* TWSUUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSUUpdater.m; sourceTree = "<group>"; };
 		27742378124C0F1500C02470 /* TermWeaver.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TermWeaver.icns; path = ../artwork/TermWeaver.icns; sourceTree = SOURCE_ROOT; };
 		2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TermWeaverPreferencePane.png; path = ../artwork/TermWeaverPreferencePane.png; sourceTree = SOURCE_ROOT; };
 		278FC55812241F4200F1F0AD /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = external/RegexKitLite/RegexKitLite.h; sourceTree = "<group>"; };
@@ -153,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276516C9124E8B8C00797DCE /* Sparkle.framework in Frameworks */,
 				27049E2F1225540B00BE2140 /* PreferencePanes.framework in Frameworks */,
 				27049E3A1225556C00BE2140 /* Cocoa.framework in Frameworks */,
 				27049E3D1225557500BE2140 /* Carbon.framework in Frameworks */,
@@ -180,6 +212,8 @@
 				27049F68122562F800BE2140 /* Other Sources */,
 				27049E4A1225573400BE2140 /* TWPreferencePane.h */,
 				27049E4B1225573400BE2140 /* TWPreferencePane.m */,
+				276516CC124E8D9C00797DCE /* TWSUUpdater.h */,
+				276516CD124E8D9C00797DCE /* TWSUUpdater.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -187,6 +221,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				276516B0124E8B4100797DCE /* Sparkle.framework */,
 				2761343B12217D9E00367AAB /* ScriptingBridge.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				27F1513712248209000E6B4E /* Carbon.framework */,
@@ -376,6 +411,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				27443AE71251396200313085 /* dsa_pub.pem */,
 				2774237B124C0F5B00C02470 /* TermWeaverPreferencePane.png */,
 				27049E4D1225576B00BE2140 /* TermWeaverPreferencePane-Info.plist */,
 				27049E6C1225593300BE2140 /* TermWeaverPreferencePane.xib */,
@@ -448,6 +484,7 @@
 			targets = (
 				27049E26122553FA00BE2140 /* TermWeaver */,
 				8D1107260486CEB800E47090 /* TermWeaverAgent */,
+				276516CF124E946100797DCE /* Distribution */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +499,7 @@
 				2774237A124C0F1500C02470 /* TermWeaver.icns in Resources */,
 				2774237C124C0F5B00C02470 /* TermWeaverPreferencePane.png in Resources */,
 				27983CC2124E76DA0000DE14 /* About.html in Resources */,
+				27443AE81251396300313085 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +515,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		276516D3124E946B00797DCE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -o errexit\n\n[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.prefpane/Contents/Info\" CFBundleVersion)\nBASE_URL=/apps/termweaver/downloads/\nDOWNLOAD_BASE_URL=\"http://nkuyu.net$BASE_URL\"\nRELEASENOTES_URL=\"http://nkuyu.net/apps/termweaver/downloads/release-notes.html#version-$VERSION\"\n\nARCHIVE_FILENAME=\"$PROJECT_NAME-$VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL$ARCHIVE_FILENAME\"\nKEY_FILE=\"/Users/krikava/Dropbox/Personal/Keys/TermWeaver/dsa_priv.pem\"\nKEY=`cat \"$KEY_FILE\"`\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.prefpane\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -c %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\n\nSIGNATURE=$(openssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n| openssl dgst -dss1 -sign < \"$KEY_FILE\" \\\n| openssl enc -base64)\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\necho curl -v -T \"$BUILT_PRODUCTS_DIR\"/\"$ARCHIVE_FILENAME\" ftp://nkuyu@nkuyu.net$BASE_URL\necho curl -v -T $WD/appcast.xml ftp://nkuyu@nkuyu.net$BASE_URL\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27049E24122553FA00BE2140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -491,6 +545,7 @@
 				27E0BECA122B232600202169 /* TWHotKeyPreference.m in Sources */,
 				27E0BEF7122C627700202169 /* TWHotKey+SRKeyCombo.m in Sources */,
 				27E0BF59122C6D4300202169 /* TWPreferencesController.m in Sources */,
+				276516CE124E8D9C00797DCE /* TWSUUpdater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +580,11 @@
 			target = 8D1107260486CEB800E47090 /* TermWeaverAgent */;
 			targetProxy = 27049E2C1225540000BE2140 /* PBXContainerItemProxy */;
 		};
+		276516DE124E94D000797DCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27049E26122553FA00BE2140 /* TermWeaver */;
+			targetProxy = 276516DD124E94D000797DCE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -556,6 +616,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
+					"\"$(SRCROOT)/external\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -595,6 +656,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../../../Development/objc/shortcutrecorder-read-only/build/Release\"",
+					"\"$(SRCROOT)/external\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_GC = supported;
@@ -620,6 +682,27 @@
 				PRODUCT_NAME = TermWeaver;
 				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		276516D0124E946100797DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Distribution;
+			};
+			name = Debug;
+		};
+		276516D1124E946100797DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Distribution;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -672,6 +755,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
 				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -699,6 +783,15 @@
 			buildConfigurations = (
 				27049E29122553FA00BE2140 /* Debug */,
 				27049E2A122553FA00BE2140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276516D9124E946E00797DCE /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276516D0124E946100797DCE /* Debug */,
+				276516D1124E946100797DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
