@@ -25,6 +25,12 @@ Features
 * UI setting for hot keys
 * Auto-Update (thanks to [Sparkle framework][10])
 
+Installation
+------------
+
+ 1. Download and extract 
+ 1. Open the TermWeaver.prefPane which should launch System Preferences.app and ask you how would you like to install it
+
 Related Work
 ------------
 
