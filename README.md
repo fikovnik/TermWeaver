@@ -50,7 +50,7 @@ parts I got inspired by the [Growl][8] project and [Google Toolbox for
 Mac][9].
 
 
-  [1]: http://github.com/fikovnik/TermWeaver/blob/master/wiki/images/sshot-prefpane-1.0.png
+  [1]: http://github.com/fikovnik/TermWeaver/raw/master/wiki/images/sshot-prefpane-1.0.png
   [2]: http://www.decimus.net/dterm.php
   [3]: http://www.decimus.net/dterm.php
   [4]: http://github.com/darwin/visor
