@@ -1,6 +1,9 @@
 TermWeaver (TERMinal anyWherE And eVerywhERe)
 =============================================
 
+Overview
+--------
+
 TermWeaver is just a very simple application (a preference pane
 really) which allows one to launch a new terminal window or a new
 terminal tab using a global hot key. Additionally to that it will try
@@ -20,7 +23,7 @@ Features
 * Hot Key for new Terminal.app tab
 * Automatically gets the current directory of the focused application (if it is possible)
 * UI setting for hot keys
-* Auto-Update (thanks to Sparky framework)
+* Auto-Update (thanks to [Sparkle framework][10])
 
 Related Work
 ------------
@@ -59,3 +62,4 @@ Mac][9].
   [7]: http://www.chachatelier.fr/programmation/fichiers/cpp-objc-en.pdf
   [8]: http://growl.info/source.php
   [9]: http://code.google.com/p/google-toolbox-for-mac/
+  [10]: http://sparkle.andymatuschak.org/
