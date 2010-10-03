@@ -1,5 +1,6 @@
-TermWeaver (TERMinal anyWherE And eVerywhERe)
-=============================================
+<h1><img src="http://github.com/fikovnik/TermWeaver/raw/master/artwork/TermWeaverPreferencePane.png" width="72" height="72" valign="middle"/>TermWeaver</h1>
+
+*TERMinal anyWherE And eVerywhERe*
 
 Overview
 --------
